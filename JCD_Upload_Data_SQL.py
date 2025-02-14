@@ -3,7 +3,6 @@ import json
 import mysql.connector
 from mysql.connector import Error
 
-# === Replace these with your database details ===
 DB_HOST = "localhost"
 DB_NAME = "dublin_bikes"
 DB_USER = "root"
