@@ -5,19 +5,8 @@ import time
 import os
 import dbinfo
 import json
-import sqlalchemy as sqla
-from sqlalchemy import create_engine
-import traceback
-import glob
-import os
-from pprint import pprint
-import simplejson as json
-import requests
-import time
-from IPython.display import display
 
-
-def stations_to_db(text, in_engine):
+def stations_to_db(text):
     # let us load the stations from the text received from jcdecaux
     stations = json.loads(text)
 
@@ -38,29 +27,25 @@ def stations_to_db(text, in_engine):
         # let us extract the relevant info from the dictionary
         vals = (station.get('address'), int(station.get('banking')), int(station.get('bike_stands')), 
                 station.get('name'), station.get('status'))
-        
-        # now let us use the engine to insert into the stations
-        in_engine.execute("""
-                          INSERT INTO station (address, banking, bikestands, name, status) 
-                          VALUES (%s, %s, %s, %s, %s);
-                          """, vals)
+        print(vals)
 
 
 def main():
     USER = "root"
     PASSWORD = "Buzz1357"
     PORT = "3306"
-    DB = "local_databasejcdecaux"
-    URI = "127.0.0.1"
+    DB = "database-download-jc-decaux"
+    URI = "database-download-jc-decaux.c36qkqoiomvi.eu-west-1.rds.amazonaws.com"
 
     connection_string = "mysql+pymysql://{}:{}@{}:{}/{}".format(USER, PASSWORD, URI, PORT, DB)
 
     engine = create_engine(connection_string, echo = True)
 
+
     try:
         r = requests.get(dbinfo.STATIONS_URI, params={"apiKey": dbinfo.JCKEY, "contract": dbinfo.NAME})
-        stations_to_db(r.text, engine)
-        time.sleep(5*60)
+        stations_to_db(r.text)
+        time.sleep(5*60) # NOTE: if you are downloading static station data only, you need to do this just once!
     except:
         print(traceback.format_exc())
 

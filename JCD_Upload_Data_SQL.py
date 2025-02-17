@@ -1,5 +1,5 @@
 import os
-import json
+import csv
 import mysql.connector
 from mysql.connector import Error
 
@@ -8,7 +8,7 @@ DB_NAME = "dublin_bikes"
 DB_USER = "root"
 DB_PASSWORD = "Buzz1357"
 
-# Path to the folder where Script #1 saved the JSON data
+# Path to the folder where CSV files are saved
 DATA_DIR = "/Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata"
 
 def insert_station_data(station_data, connection):
@@ -36,8 +36,8 @@ def insert_station_data(station_data, connection):
             %(number)s,
             %(name)s,
             %(address)s,
-            %(lat)s,
-            %(lng)s,
+            %(latitude)s,
+            %(longitude)s,
             %(banking)s,
             %(bonus)s,
             %(status)s,
@@ -80,32 +80,32 @@ def main():
         if connection.is_connected():
             print("Successfully connected to the database.")
 
-            # 2. Process all JSON files in the DATA_DIR
+            # 2. Process all CSV files in the DATA_DIR
             for file_name in os.listdir(DATA_DIR):
-                if file_name.endswith(".json"):
+                if file_name.endswith(".csv"):
                     file_path = os.path.join(DATA_DIR, file_name)
                     print(f"Reading data from {file_path}")
 
-                    with open(file_path, "r") as f:
-                        stations_list = json.load(f)
+                    with open(file_path, "r", newline="") as f:
+                        reader = csv.DictReader(f)
 
-                    # 3. Insert/update each station from this file
-                    for station in stations_list:
-                        station_data = {
-                            'number': station.get('number'),
-                            'name': station.get('name'),
-                            'address': station.get('address'),
-                            'lat': station['position'].get('lat'),
-                            'lng': station['position'].get('lng'),
-                            'banking': 1 if station.get('banking') else 0,
-                            'bonus': 1 if station.get('bonus') else 0,
-                            'status': station.get('status'),
-                            'bike_stands': station.get('bike_stands'),
-                            'available_bike_stands': station.get('available_bike_stands'),
-                            'available_bikes': station.get('available_bikes'),
-                            'last_update': station.get('last_update')
-                        }
-                        insert_station_data(station_data, connection)
+                        # 3. Insert/update each station from this file
+                        for row in reader:
+                            station_data = {
+                                'number': int(row['number']),
+                                'name': row['name'],
+                                'address': row['address'],
+                                'latitude': float(row['latitude']),
+                                'longitude': float(row['longitude']),
+                                'banking': int(row['banking']),
+                                'bonus': int(row['bonus']),
+                                'status': row['status'],
+                                'bike_stands': int(row['bike_stands']),
+                                'available_bike_stands': int(row['available_bike_stands']),
+                                'available_bikes': int(row['available_bikes']),
+                                'last_update': int(row['last_update'])  # Assuming this is a timestamp
+                            }
+                            insert_station_data(station_data, connection)
 
                     print(f"Finished inserting data from {file_path}")
 
