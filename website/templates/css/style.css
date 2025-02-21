@@ -1,0 +1,349 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.navbar-logo img {
+    height: 50px;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap; /* Allow links to wrap to the next line if needed */
+}
+
+.navbar-links a {
+    text-decoration: none;
+    font-weight: 400;
+    color: #333;
+    font-size: 13px;
+    transition: color 0.3s ease;
+    white-space: nowrap; /* Prevent text from wrapping within links */
+}
+
+.navbar-links a:hover {
+    color: #007bff;
+}
+
+@media (max-width: 600px) {
+    .navbar-links {
+        gap: 10px; /* Reduce the gap between links */
+    }
+    .navbar-logo img {
+        height: 30px; /* Reduce the logo size */
+    }
+}
+
+/* Home Page Styles */
+.home-image {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.home-image img {
+    max-width: 100%;
+    height: 300px;
+}
+
+.home-buttons {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.home-signup-button {
+    padding: 10px 20px;
+    background-color: #245b95;
+    border: none;
+    border-radius: 18px;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.home-signup-button:hover {
+    background-color: #0056b3;
+}
+
+.home-login-link {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.home-login-link a {
+    color: #245b95;
+    text-decoration: none;
+}
+
+.home-login-link a:hover {
+    text-decoration: underline;
+}
+
+
+.dublin-bikes-heading {
+    text-align: center;
+    font-size: 30px;
+    color: #333;
+    padding: none;
+    margin-bottom: 0px; /* Space between the heading and the login container */
+}
+
+.dublin-bikes-text {
+    text-align: center;
+    font-size: 15px;
+    color: #333;
+    padding: none;
+    margin-bottom: 0px; /* Space between the heading and the login container */
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    margin-top: 20px; /* Adjust this value based on the height of your navbar */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.forgot-password {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.forgot-text {
+    color: #555; /* Grey color for "Forgot password?" */
+}
+
+.reset-text {
+    color: #245b95; /* Blue color for "Reset it here" */
+}
+
+.forgot-password:hover .reset-text {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #245b95;
+    border: none;
+    border-radius: 18px;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #245b95;
+}
+
+.register-link {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #555;
+}
+
+.register-link a {
+    color: #245b95;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: none;
+    color: none;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #33333362;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #245b95;
+}
+
+/* Sign Up Container */
+.signup-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Name Fields (First Name and Last Name) */
+.name-fields {
+    display: flex;
+    gap: 10px; /* Space between First Name and Last Name fields */
+}
+
+.name-fields .form-group {
+    flex: 1; /* Each field takes equal space */
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: #999;
+}
+
+/* Register Button */
+.register-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #245b95;
+    border: none;
+    border-radius: 18px;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.register-button:hover {
+    background-color: #0056b3;
+}
+
+/* Login Link */
+.login-link {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #555;
+}
+
+.login-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Map Container */
+#map {
+    height: calc(100vh - 140px); /* Adjust the height as needed */
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* Button Container */
+.map-button-container {
+    position: absolute; /* Position buttons on top of the map */
+    top: 90px; /* Distance from the top of the map */
+    left: centre; /* Distance from the left of the map */
+    z-index: 1000; /* Ensure buttons are above the map */
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+
+/* Map Buttons */
+.map-button {
+    padding: 10px 20px;
+    background-color: #245b95;
+    border: none;
+    border-radius: 18px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.map-button:hover {
+    background-color: #1a446e;
+}

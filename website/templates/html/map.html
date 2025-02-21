@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+    <link rel="stylesheet" href="/website/templates/css/style.css">
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbslibQUMQevXuyed3AVFSdroDFvSQ6EM&callback=initMap" async defer></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="index.html">
+                <img src="/website/templates/images/logo.png" alt="Dublin Bikes Logo">
+            </a>
+        </div>
+        <div class="navbar-links">
+            <a href="availability.html">Map</a>
+            <a href="faq.html">FAQ</a>
+            <a href="analytics.html">Analytics</a>
+        </div>
+    </nav>
+
+        <!-- Button Container -->
+        <div class="map-button-container">
+            <button class="map-button" onclick="handleButtonClick('Available Bikes')">Available Bikes</button>
+            <button class="map-button" onclick="handleButtonClick('Available Spaces')">Available Spaces</button>
+        </div>
+
+    <!-- Map Container -->
+    <div id="map"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="signup.html">Sign Up</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="terms.html">Terms and Conditions</a>
+            <a href="cookies.html">Cookie Preferences</a>
+        </div>
+    </footer>
+
+    <script src='/website/static/script.js'></script>
+</body>
+</html>

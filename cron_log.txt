@@ -860,3 +860,574 @@ Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_da
 Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250217_175501.json
 Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250217_180001.json
 Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250217_180500.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250217_181001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250217_181501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250217_182001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250217_185502.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250217_190001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250217_190501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250217_191001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250217_191500.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250217_192001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250217_192501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250217_193001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250217_193501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250217_201001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250217_202502.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250217_204502.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250217_205202.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250217_212501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250217_213001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250217_213501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250217_214001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250217_214501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250217_215001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250217_215501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250217_220026.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250217_220501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250217_221001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250217_221501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250217_222000.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_090001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_090501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_091000.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_091501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_092001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_092501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_093001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_093501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_094000.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_094501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_095000.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_095500.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_100000.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_100500.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_101001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_102200.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_102501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_103000.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_103500.csv
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/socket.py", line 975, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x10d064ad0>: Failed to resolve 'api.jcdecaux.com' ([Errno 8] nodename nor servname provided, or not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.jcdecaux.com', port=443): Max retries exceeded with url: /vls/v1/stations?contract=dublin&apiKey=9347a60de1bf35e15ebac63cbeb87be30214d8b0 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x10d064ad0>: Failed to resolve 'api.jcdecaux.com' ([Errno 8] nodename nor servname provided, or not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/simon/Desktop/COMP30830-Bicycle-Project/JCD_Download_Data.py", line 51, in <module>
+    main()
+    ~~~~^^
+  File "/Users/simon/Desktop/COMP30830-Bicycle-Project/JCD_Download_Data.py", line 35, in main
+    data = get_jcdecaux_data(API_KEY, CONTRACT)
+  File "/Users/simon/Desktop/COMP30830-Bicycle-Project/JCD_Download_Data.py", line 18, in get_jcdecaux_data
+    response = requests.get(url)
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.jcdecaux.com', port=443): Max retries exceeded with url: /vls/v1/stations?contract=dublin&apiKey=9347a60de1bf35e15ebac63cbeb87be30214d8b0 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x10d064ad0>: Failed to resolve 'api.jcdecaux.com' ([Errno 8] nodename nor servname provided, or not known)"))
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/socket.py", line 975, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x107838ad0>: Failed to resolve 'api.jcdecaux.com' ([Errno 8] nodename nor servname provided, or not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.jcdecaux.com', port=443): Max retries exceeded with url: /vls/v1/stations?contract=dublin&apiKey=9347a60de1bf35e15ebac63cbeb87be30214d8b0 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x107838ad0>: Failed to resolve 'api.jcdecaux.com' ([Errno 8] nodename nor servname provided, or not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/simon/Desktop/COMP30830-Bicycle-Project/JCD_Download_Data.py", line 51, in <module>
+    main()
+    ~~~~^^
+  File "/Users/simon/Desktop/COMP30830-Bicycle-Project/JCD_Download_Data.py", line 35, in main
+    data = get_jcdecaux_data(API_KEY, CONTRACT)
+  File "/Users/simon/Desktop/COMP30830-Bicycle-Project/JCD_Download_Data.py", line 18, in get_jcdecaux_data
+    response = requests.get(url)
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.jcdecaux.com', port=443): Max retries exceeded with url: /vls/v1/stations?contract=dublin&apiKey=9347a60de1bf35e15ebac63cbeb87be30214d8b0 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x107838ad0>: Failed to resolve 'api.jcdecaux.com' ([Errno 8] nodename nor servname provided, or not known)"))
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_122001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_122501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_123000.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_123500.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_124000.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_124500.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_125001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_130003.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_130501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_131001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_131501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_132002.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_132501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_133001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_133501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_134000.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_134500.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_135001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_135501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_140001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_140501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_141001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_141500.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_142001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_142500.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_143000.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_143501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_164001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_164501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_165001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_165500.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_170000.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_170501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_171001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_171501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_172001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_172501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_173000.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_173500.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_174000.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_174501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_175001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_175501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_180001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_180500.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_181000.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_181501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_182001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_182929.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_183001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_183501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_185501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250218_190001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_112001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_112501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_113001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_113500.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_114001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_114501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_115004.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_115500.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_120001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_120503.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_121001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_121501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_122039.csv
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/socket.py", line 975, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x111030ad0>: Failed to resolve 'api.jcdecaux.com' ([Errno 8] nodename nor servname provided, or not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.jcdecaux.com', port=443): Max retries exceeded with url: /vls/v1/stations?contract=dublin&apiKey=9347a60de1bf35e15ebac63cbeb87be30214d8b0 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x111030ad0>: Failed to resolve 'api.jcdecaux.com' ([Errno 8] nodename nor servname provided, or not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/simon/Desktop/COMP30830-Bicycle-Project/JCD_Download_Data.py", line 51, in <module>
+    main()
+    ~~~~^^
+  File "/Users/simon/Desktop/COMP30830-Bicycle-Project/JCD_Download_Data.py", line 35, in main
+    data = get_jcdecaux_data(API_KEY, CONTRACT)
+  File "/Users/simon/Desktop/COMP30830-Bicycle-Project/JCD_Download_Data.py", line 18, in get_jcdecaux_data
+    response = requests.get(url)
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.jcdecaux.com', port=443): Max retries exceeded with url: /vls/v1/stations?contract=dublin&apiKey=9347a60de1bf35e15ebac63cbeb87be30214d8b0 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x111030ad0>: Failed to resolve 'api.jcdecaux.com' ([Errno 8] nodename nor servname provided, or not known)"))
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_153501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_154001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_154501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_155001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_155501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_160001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_160501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_161001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_161501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_162001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_162501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_163001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_163501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_164000.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_164500.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_165001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_165501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_170001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_170501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_171001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_171501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_172001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_172501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_173001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_173501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_174001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_174501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_175001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_175501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_180000.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_180500.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_181000.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_181501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_182001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_182501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_183001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_183501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_184000.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_184500.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_190716.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250219_191001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_034422.csv
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/socket.py", line 975, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x101b6cad0>: Failed to resolve 'api.jcdecaux.com' ([Errno 8] nodename nor servname provided, or not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.jcdecaux.com', port=443): Max retries exceeded with url: /vls/v1/stations?contract=dublin&apiKey=9347a60de1bf35e15ebac63cbeb87be30214d8b0 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x101b6cad0>: Failed to resolve 'api.jcdecaux.com' ([Errno 8] nodename nor servname provided, or not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/simon/Desktop/COMP30830-Bicycle-Project/JCD_Download_Data.py", line 51, in <module>
+    main()
+    ~~~~^^
+  File "/Users/simon/Desktop/COMP30830-Bicycle-Project/JCD_Download_Data.py", line 35, in main
+    data = get_jcdecaux_data(API_KEY, CONTRACT)
+  File "/Users/simon/Desktop/COMP30830-Bicycle-Project/JCD_Download_Data.py", line 18, in get_jcdecaux_data
+    response = requests.get(url)
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/anaconda3/envs/COMP30830_Python3.12/lib/python3.13/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.jcdecaux.com', port=443): Max retries exceeded with url: /vls/v1/stations?contract=dublin&apiKey=9347a60de1bf35e15ebac63cbeb87be30214d8b0 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x101b6cad0>: Failed to resolve 'api.jcdecaux.com' ([Errno 8] nodename nor servname provided, or not known)"))
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_105526.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_110000.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_110500.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_111514.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_112001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_112501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_113116.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_124501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_125845.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_131002.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_134016.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_134952.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_135002.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_135501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_140001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_140501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_141001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_141500.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_142000.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_142500.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_143245.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_143501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_144001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_144501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_145000.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_145500.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_150001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_150501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_151000.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_151501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_152002.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_152501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_153001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_153500.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_154000.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_154500.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250220_155059.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_095003.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_095500.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_100000.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_105500.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_110001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_110501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_111001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_111501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_112000.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_112500.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_113000.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_113500.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_114000.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_114500.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_115001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_115501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_120001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_120500.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_121000.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_121501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_122026.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_122501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_123001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_123501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_124001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_124501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_125000.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_125501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_130001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_132001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_132501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_133001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_133501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_134001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_134500.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_135000.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_135500.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_140001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_140501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_141001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_141501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_142001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_142501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_143001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_143501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_144001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_144501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_145001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_145501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_150001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_150501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_151001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_151501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_152001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_152501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_153001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_153501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_154001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_154501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_155001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_155501.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_160001.csv
+Data saved to /Users/simon/Desktop/COMP30830-Bicycle-Project/JCDdata/jcdecaux_data_20250221_160500.csv
