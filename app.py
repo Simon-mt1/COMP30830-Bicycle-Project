@@ -5,7 +5,7 @@ import datetime
 app = Flask(__name__)
 
 # API Details
-API_KEY = "fafa09bb509fa0c1af3a15db7a18edf8b89c9c3f"  # Replace with actual key
+API_KEY = "API key here"  # Replace with actual key
 CONTRACT = "dublin"
 STATIONS_URI = "https://api.jcdecaux.com/vls/v1/stations"
 
