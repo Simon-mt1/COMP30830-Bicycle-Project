@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <a href="{{ url_for("index") }}">
+          <img
+            src="{{ url_for('static', filename='images/logo.png') }}"
+            alt="Dublin Bikes Logo"
+          />
+        </a>
+      </div>
+      <div class="navbar-links">
+        <a href="{{ url_for("map") }}">MAP</a>
+        <a href="faq.html">FAQ</a>
+        <a href="analytics.html">ANALYTICS</a>
+      </div>
+    </nav>
+
+    <!-- Dublin Bikes Heading -->
+    <h1 class="dublin-bikes-heading">Dublin Bikes</h1>
+
+    <h3 class="dublin-bikes-text">The easiest way to explore the city</h3>
+
+    <!-- Image -->
+    <div class="home-image">
+      <img
+        src="{{ url_for('static', filename='images/homepage.png') }}"
+        alt="Dublin Bikes Image"
+      />
+    </div>
+
+    <!-- Sign Up Button -->
+    <div class="home-buttons">
+      <a href="{{ url_for("signup") }}" class="home-signup-button">Sign Up</a>
+    </div>
+
+    <!-- Login Link -->
+    <p class="home-login-link">
+      Already registered? <a href="{{ url_for("login") }}">Log in</a>
+    </p>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="signup.html">Sign Up</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="terms.html">Terms and Conditions</a>
+        <a href="cookies.html">Cookie Preferences</a>
+      </div>
+    </footer>
+  </body>
+</html>
