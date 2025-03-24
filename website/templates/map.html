@@ -11,24 +11,42 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="navbar-logo">
-            <a href="{{ url_for("index") }}">
-                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Dublin Bikes Logo">
+            <a href="{{ url_for("index")}}">
+              <img
+                src="{{ url_for('static', filename='images/logo.png') }}"
+                alt="Dublin Bikes Logo"
+              />
             </a>
-        </div>
-        <div class="navbar-links">
-            <a href="{{ url_for("map") }}">Map</a>
+          </div>
+          <div class="temperature">
+              <p>{{weatherData["main"]["temp"]}}°C</p>
+              <img src="{{weatherData["icon"]}}" alt="">
+          </div>
+          <div class="navbar-links">
+            <a href="{{ url_for("map") }}">MAP</a>
             <a href="faq.html">FAQ</a>
-            <a href="analytics.html">Analytics</a>
-        </div>
+            <a href="analytics.html">ANALYTICS</a>
+            <a href="{{ url_for("logout") }}">LOGOUT</a>
+          </div>
     </nav>
 
+    <!-- Button Container -->
+    <div class="map-button-container">
+        <button class="map-button" disabled onclick="handleButtonClick(event)">Available Bikes</button>
+        <button class="map-button disabled" onclick="handleButtonClick(event)">Available Spaces</button>
+    </div>
+    
+    <!-- Map Container -->
+    <div id="map"></div>
+    
     <div class="sidebar">
+        <img class="sidebar-image" src="./../static/images/bike.png">
+        <div class="close-button">
+            <div></div>
+            <div></div>
+        </div>
         <div class="sidebar-head">
             <h3 class="heading"></h3>
-            <div class="close-button">
-                <div></div>
-                <div></div>
-            </div>
         </div>
 
         <div class="sidebar-content">
@@ -41,29 +59,12 @@
             </div>
         </div>
     </div>
-    
-    <!-- Button Container -->
-    <div class="map-button-container">
-        <button class="map-button" disabled onclick="handleButtonClick(event)">Available Bikes</button>
-        <button class="map-button disabled" onclick="handleButtonClick(event)">Available Spaces</button>
-    </div>
-    
-    <!-- Map Container -->
-    <div id="map"></div>
-    
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-links">
-            <a href="signup.html">Sign Up</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="terms.html">Terms and Conditions</a>
-            <a href="cookies.html">Cookie Preferences</a>
-        </div>
-    </footer>
+
     <script>
-        const mapData = JSON.parse('{{ data | tojson | safe }}');
+        const mapData = JSON.parse('{{ jcdecauxData | tojson | safe }}');
+        const weatherData = JSON.parse('{{ weatherData | tojson | safe }}');
     </script>
     <script src='{{ url_for('static', filename='js/script.js') }}'></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbslibQUMQevXuyed3AVFSdroDFvSQ6EM&callback=initMap" async defer></script>
+    <script src={{"https://maps.googleapis.com/maps/api/js?" + "key=" + googleMapApiKey + "&callback=initMap"}} async defer></script>
 </body>
 </html>

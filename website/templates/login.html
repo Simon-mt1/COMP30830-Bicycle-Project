@@ -20,11 +20,6 @@
           />
         </a>
       </div>
-      <div class="navbar-links">
-        <a href="{{ url_for("map") }}">MAP</a>
-        <a href="faq.html">FAQ</a>
-        <a href="analytics.html">ANALYTICS</a>
-      </div>
     </nav>
 
     <!-- Dublin Bikes Heading -->
@@ -34,13 +29,13 @@
     <div class="login-container">
       <h4>Login</h4>
 
-      <form class="login-form">
+      <form class="login-form" method="POST">
         <div class="form-group">
           <input
             type="text"
-            id="username"
-            name="username"
-            placeholder="Username"
+            id="email"
+            name="email"
+            placeholder="Email"
             required
           />
         </div>
@@ -53,13 +48,17 @@
             required
           />
         </div>
-
+          
         <a href="#" class="forgot-password">
           <span class="forgot-text">Forgot password?</span>
           <span class="reset-text">Reset it here</span>
         </a>
         <button type="submit" class="login-button">LOGIN</button>
       </form>
+
+      <p class="invalid {{ 'inactive' if is_active else '' }}">
+        Invalid email or password
+      </p>
 
       <p class="register-link">
         Don't have an account?

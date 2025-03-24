@@ -31,6 +31,7 @@ async function initMap() {
   const sidebarheading = document.querySelector(".heading");
   const bikesNumber = document.querySelector(".bikes-number");
   const spacesNumber = document.querySelector(".spaces-number");
+  const sidebarImage = document.querySelector(".sidebar-image");
 
   // Custom map styles to hide all labels except road names
   const mapStyles = [
@@ -107,6 +108,9 @@ async function initMap() {
       sidebarheading.innerText = data["address"];
       bikesNumber.innerText = data["available_bikes"];
       spacesNumber.innerText = data["available_bike_stands"] + " P";
+      // place = fetchPlaces(data["address"]);
+      // sidebarImage.src = "";
+      sidebarImage.alt = "";
       setTimeout(() => {
         sidebar.classList.add("open");
         map.setZoom(16);
@@ -120,3 +124,103 @@ async function initMap() {
     markers.push(marker);
   }
 }
+
+const fetchPlaces = async (place) => {
+  const url = "https://places.googleapis.com/v1/places:searchText";
+  const apiKey = "AIzaSyAaGUqWCizTD4mPtHVbu6okPQ2KiCx-mEk";
+
+  const headers = {
+    "X-Goog-Api-Key": apiKey,
+    "X-Goog-FieldMask":
+      "places.displayName,places.formattedAddress,places.id,places.name",
+    "Content-Type": "application/json",
+  };
+
+  const body = JSON.stringify({
+    textQuery: place + " dublin bikes",
+  });
+
+  try {
+    const response = await fetch(url, {
+      method: "POST",
+      headers: headers,
+      body: body,
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    const data = await response.json();
+    placeDetail = fetchPlaceDetails(data);
+  } catch (error) {
+    console.error("Error fetching places:", error);
+    return null;
+  }
+};
+
+const fetchPlaceDetails = async (place) => {
+  const url = "https://places.googleapis.com/v1/" + place["places"][0]["name"];
+  const apiKey = "AIzaSyAaGUqWCizTD4mPtHVbu6okPQ2KiCx-mEk";
+
+  const headers = {
+    "X-Goog-Api-Key": apiKey,
+    "X-Goog-FieldMask": "id,displayName,name,photos",
+    "Content-Type": "application/json",
+  };
+
+  try {
+    const response = await fetch(url, {
+      method: "GET",
+      headers: headers,
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    const data = await response.json();
+    fetchPhoto(data);
+  } catch (error) {
+    console.error("Error fetching place details:", error);
+    return null;
+  }
+};
+
+const fetchPhoto = async (place) => {
+  const params = {
+    maxHeightPx: 400,
+    maxWidthPx: 400,
+    apiKey: "AIzaSyAaGUqWCizTD4mPtHVbu6okPQ2KiCx-mEk", // You can pass the API key in headers if needed
+  };
+
+  const url =
+    "https://places.googleapis.com/v1/" +
+    place["photos"][0]["name"] +
+    "/media" +
+    "?maxHeightPx=" +
+    params.maxHeightPx +
+    "&maxWidthPx=" +
+    params.maxWidthPx +
+    "&key=" +
+    params.apiKey;
+
+  try {
+    const response = await fetch(url, {
+      method: "GET",
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    const imageUrl = await response.url;
+
+    sideBarImage = document.querySelector(".sidebar-image");
+
+    sideBarImage.src = imageUrl;
+    sideBarImage.alt = "Google Place Photo";
+  } catch (error) {
+    console.error("Error fetching photo:", error);
+  }
+};

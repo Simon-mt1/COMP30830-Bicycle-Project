@@ -13,17 +13,12 @@
     <!--Navbar-->
     <nav class="navbar">
       <div class="navbar-logo">
-        <a href="{{ url_for("index") }}">
+        <a href="{{ url_for("login") }}">
           <img
             src="{{ url_for('static', filename='images/logo.png') }}"
             alt="Dublin Bikes Logo"
           />
         </a>
-      </div>
-      <div class="navbar-links">
-        <a href="{{ url_for("map") }}">MAP</a>
-        <a href="faq.html">FAQ</a>
-        <a href="analytics.html">ANALYTICS</a>
       </div>
     </nav>
 
@@ -34,7 +29,7 @@
     <div class="signup-container">
       <h4>Register</h4>
 
-      <form class="signup-form">
+      <form class="signup-form" action="/signup" method="POST">
         <div class="name-fields">
           <div class="form-group">
             <input
@@ -79,6 +74,10 @@
 
         <button type="submit" class="register-button">REGISTER</button>
       </form>
+
+      <p class="email-exist {{ 'inactive' if is_active else '' }}">
+        An account with this Email ID already exist
+      </p>
 
       <p class="login-link">
         Already have an account? <a href="{{ url_for("login") }}">Login</a>

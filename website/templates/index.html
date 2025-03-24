@@ -24,6 +24,7 @@
         <a href="{{ url_for("map") }}">MAP</a>
         <a href="faq.html">FAQ</a>
         <a href="analytics.html">ANALYTICS</a>
+        <a href="{{ url_for("logout") }}">LOGOUT</a>
       </div>
     </nav>
 
@@ -39,17 +40,7 @@
         alt="Dublin Bikes Image"
       />
     </div>
-
-    <!-- Sign Up Button -->
-    <div class="home-buttons">
-      <a href="{{ url_for("signup") }}" class="home-signup-button">Sign Up</a>
-    </div>
-
-    <!-- Login Link -->
-    <p class="home-login-link">
-      Already registered? <a href="{{ url_for("login") }}">Log in</a>
-    </p>
-
+    
     <!-- Footer -->
     <footer class="footer">
       <div class="footer-links">
