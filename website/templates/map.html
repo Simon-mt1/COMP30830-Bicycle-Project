@@ -63,6 +63,7 @@
     <script>
         const mapData = JSON.parse('{{ jcdecauxData | tojson | safe }}');
         const weatherData = JSON.parse('{{ weatherData | tojson | safe }}');
+        const googleapis = JSON.parse('{{ googleMapApiKey | tojson | safe }}')
     </script>
     <script src='{{ url_for('static', filename='js/script.js') }}'></script>
     <script src={{"https://maps.googleapis.com/maps/api/js?" + "key=" + googleMapApiKey + "&callback=initMap"}} async defer></script>

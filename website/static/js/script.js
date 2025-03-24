@@ -127,7 +127,7 @@ async function initMap() {
 
 const fetchPlaces = async (place) => {
   const url = "https://places.googleapis.com/v1/places:searchText";
-  const apiKey = "AIzaSyAaGUqWCizTD4mPtHVbu6okPQ2KiCx-mEk";
+  const apiKey = googleMapApiKey;
 
   const headers = {
     "X-Goog-Api-Key": apiKey,
@@ -161,7 +161,7 @@ const fetchPlaces = async (place) => {
 
 const fetchPlaceDetails = async (place) => {
   const url = "https://places.googleapis.com/v1/" + place["places"][0]["name"];
-  const apiKey = "AIzaSyAaGUqWCizTD4mPtHVbu6okPQ2KiCx-mEk";
+  const apiKey = googleMapApiKey;
 
   const headers = {
     "X-Goog-Api-Key": apiKey,
@@ -191,7 +191,7 @@ const fetchPhoto = async (place) => {
   const params = {
     maxHeightPx: 400,
     maxWidthPx: 400,
-    apiKey: "AIzaSyAaGUqWCizTD4mPtHVbu6okPQ2KiCx-mEk", // You can pass the API key in headers if needed
+    apiKey: googleMapApiKey, // You can pass the API key in headers if needed
   };
 
   const url =
