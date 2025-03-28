@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./../static/css/style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="canvas-container">
+        <canvas id="temp" width="100px" height="100px"></canvas>
+        <canvas id="windspeed" width="100px" height="100px"></canvas>
+        <canvas id="new" width="100px" height="100px"></canvas>
+      </div>
+    </div>
+
+    <script>
+      const weatherData = JSON.parse('{{weatherData | tojson | safe }}');
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{{ url_for('static', filename='js/charts.js') }}"></script>
+  </body>
+</html>

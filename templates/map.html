@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Map</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!-- Google Maps API -->
+    </head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="{{ url_for("index")}}">
+                
+                    <img
+                      src="{{ url_for('static', filename='images/logo.png') }}"
+                      alt="Dublin Bikes Logo"
+                    />
+                
+            </a>
+          </div>
+          <div class="temperature">
+              <p>{{weatherData["hourly"][0]["temp"]}}°C</p>
+              <div class="nav-image-container" onclick="handleWeatherIconClick()">
+                  <img src="{{weatherData["hourly"][0]["icon"]}}" alt="">
+              </div>
+          </div>
+          <div class="navbar-links">
+            <a href="{{ url_for("map") }}">MAP</a>
+            <a href="faq.html">FAQ</a>
+            <a href="analytics.html">ANALYTICS</a>
+            <a href="{{ url_for("logout") }}">LOGOUT</a>
+          </div>
+    </nav>
+
+    <!-- Button Container -->
+    <div class="map-button-container">
+        <button class="map-button" disabled onclick="handleButtonClick(event)">Available Bikes</button>
+        <button class="map-button disabled" onclick="handleButtonClick(event)">Available Spaces</button>
+        <button class="back-button display">Exit directions</button>
+    </div>
+    
+    <!-- Map Container -->
+    <div id="map"></div>
+    
+    <div class="sidebar">
+        <div class="sidebar-image"></div>
+        <div class="sidebar-head">
+            <h3 class="heading"></h3>
+        </div>
+
+        <table class="sidebar-content">
+            <tr class="address">
+                <td>Address</td>
+                <td class="address-text">Noob</td>
+            </tr>
+            <tr class="bike">
+                <td><img src="{{ url_for('static', filename='images/bike.png') }}" alt="Bike image" class="bike-image"></td>
+                <td class="bikes-number"></td>
+            </tr>
+        </table>
+        <button class="direction-button">Directions</button>
+        <button class="close-button">
+            Close
+        </button>
+    </div>
+
+    <div class="modal transform">
+        <div class="table-container">
+            <table class="weather-table">
+                <tr>
+                    <th>Time</th>
+                    <th>Weather</th>
+                    <th>Temp</th>
+                    <th>Wind m/s</th>
+                    <th>Precipitation</th>
+                </tr>
+                {% for data in weatherData["hourly"] %}
+                    <tr>
+                        <td>{{data["dt"]}}</td>
+                        <td><img src="{{data["icon"]}}" alt="data"></td>
+                        <td>{{data["temp"]}}</td>
+                        <td>{{data["wind_speed"]}}</td>
+                        <td>{{data["temp"]}}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+        <div class="x-mark">
+            <div></div>
+            <div></div>
+        </div>        
+    </div>
+    <div class="overlay transform"></div>
+
+    <script>
+        const mapData = JSON.parse('{{ jcdecauxData | tojson | safe }}');
+        const weatherData = JSON.parse('{{ weatherData | tojson | safe }}');
+        const googleapis = JSON.parse('{{ googleMapApiKey | tojson | safe }}');
+    </script>
+    <script src='{{ url_for('static', filename='js/script.js') }}'></script>
+    <script src="{{ url_for('static', filename='js/fetchPlace.js') }}"></script>
+    <script src={{"https://maps.googleapis.com/maps/api/js?" + "key=" + googleMapApiKey + "&callback=initMap"}}></script>
+</body>
+</html>

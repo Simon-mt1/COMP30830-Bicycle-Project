@@ -1,0 +1,651 @@
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+button {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-self: flex-start;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: transparent;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.nav-image-container {
+  background-color: #0056b3;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.navbar-logo img {
+  height: 50px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  flex-wrap: wrap; /* Allow links to wrap to the next line if needed */
+}
+
+.navbar-links a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 14px;
+  transition: color 0.3s ease;
+  white-space: nowrap; /* Prevent text from wrapping within links */
+}
+
+.navbar-links a:hover {
+  color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .navbar-links {
+    gap: 10px; /* Reduce the gap between links */
+  }
+  .navbar-logo img {
+    height: 30px; /* Reduce the logo size */
+  }
+}
+
+.main-content {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Home Page Styles */
+.home-image {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.home-image img {
+  max-width: 100%;
+  height: 300px;
+}
+
+.home-buttons {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.home-signup-button {
+  padding: 10px 20px;
+  background-color: #245b95;
+  border: none;
+  border-radius: 18px;
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home-signup-button:hover {
+  background-color: #0056b3;
+}
+
+.home-login-link {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.home-login-link a {
+  color: #245b95;
+  text-decoration: none;
+}
+
+.home-login-link a:hover {
+  text-decoration: underline;
+}
+
+.dublin-bikes-heading {
+  text-align: center;
+  font-size: 30px;
+  color: #333;
+  padding: none;
+  margin: 50px 0px 0px; /* Space between the heading and the login container */
+}
+
+.dublin-bikes-text {
+  text-align: center;
+  font-size: 15px;
+  color: #333;
+  padding: none;
+  margin-bottom: 0px; /* Space between the heading and the login container */
+}
+
+.login-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  margin: 20px 0px 0px; /* Adjust this value based on the height of your navbar */
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.forgot-password {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.forgot-text {
+  color: #555; /* Grey color for "Forgot password?" */
+}
+
+.reset-text {
+  color: #245b95; /* Blue color for "Reset it here" */
+}
+
+.forgot-password:hover .reset-text {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #245b95;
+  border: none;
+  border-radius: 18px;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #245b95;
+}
+
+.register-link {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #555;
+}
+
+.register-link a {
+  color: #245b95;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: none;
+  color: none;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #33333362;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #245b95;
+}
+
+/* Sign Up Container */
+.signup-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Name Fields (First Name and Last Name) */
+.name-fields {
+  display: flex;
+  gap: 10px; /* Space between First Name and Last Name fields */
+}
+
+.name-fields .form-group {
+  flex: 1; /* Each field takes equal space */
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+/* Register Button */
+.register-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #245b95;
+  border: none;
+  border-radius: 18px;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.register-button:hover {
+  background-color: #0056b3;
+}
+
+/* Login Link */
+.login-link {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #555;
+}
+
+.login-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Map Container */
+#map {
+  position: absolute;
+  margin-top: 0px;
+  z-index: 0;
+  margin-bottom: 0px;
+  inset: 70px 0 0 0;
+}
+
+/* Button Container */
+.map-button-container {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100px;
+}
+
+/* Map Buttons */
+.map-button {
+  padding: 10px 20px;
+  background-color: #245b95;
+  border: none;
+  border-radius: 18px;
+  color: #fff;
+  font-size: 14px;
+  cursor: not-allowed;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button {
+  padding: 10px 20px;
+  background-color: #245b95;
+  border: none;
+  border-radius: 18px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.disabled {
+  background-color: grey;
+  cursor: pointer;
+}
+
+.map-button:hover {
+  background-color: #1a446e;
+}
+
+.display {
+  display: none;
+}
+
+.sidebar {
+  width: 30%;
+  height: 100%;
+  background-color: white;
+  position: static;
+  align-self: flex-start;
+  transform: translateX(-100%);
+  transition: 300ms transform ease-in;
+  overflow-y: scroll;
+}
+
+.sidebar-head {
+  margin-top: 20px;
+  position: relative;
+}
+
+.open {
+  transform: translateX(0);
+}
+
+.close-button {
+  width: 60px;
+  height: 40px;
+  position: fixed;
+  top: 40px;
+  right: 30px;
+  color: white;
+  border: none;
+  background-color: red;
+  font-weight: bold;
+  z-index: 100;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.close-button-disabled {
+  cursor: not-allowed;
+}
+
+.close-button:hover {
+  border: 2px solid red;
+  background-color: rgb(255, 255, 255);
+  color: red;
+}
+
+.heading {
+  margin: 0px;
+  height: 21px;
+  text-align: center;
+}
+
+.bike-image {
+  width: 40px;
+  margin-left: 5px;
+}
+
+.sidebar-content {
+  margin-top: 30px;
+  width: 100%;
+}
+
+td {
+  text-align: center;
+  padding: 20px;
+}
+
+.invalid {
+  color: red;
+  font-size: 12px;
+}
+
+.inactive {
+  display: none;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blocks {
+  margin: 20px;
+  background-color: #e4e1e1f4;
+  padding: 100px;
+  text-align: center;
+  font-weight: bold;
+  min-width: 100px;
+  text-decoration: none;
+  color: black;
+}
+
+.blocks:hover {
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.profile-button {
+  border-radius: 100%;
+  border: none;
+  background-color: rgb(107, 107, 232);
+  padding: 10px 12px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.temperature {
+  margin-left: 250px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.temperature p {
+  color: black;
+  font-weight: bold;
+}
+
+.sidebar-image {
+  width: 100%;
+  height: 300px;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.direction-button {
+  display: block;
+  padding: 10px 15px;
+  background-color: #245b95;
+  color: white;
+  border-radius: 20px;
+  margin: 0 auto;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.direction-button:hover {
+  color: #0088b9;
+  border: 2px solid #0088b9;
+  background-color: white;
+}
+
+.places-dropdown {
+  position: fixed;
+  top: 15%;
+  left: 100px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+/* .main-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.canvas-container {
+  width: 85%;
+  height: 85%;
+  justify-self: center;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: transparent;
+  align-items: center;
+}
+
+canvas {
+  margin: 20px;
+} */
+
+.modal {
+  position: fixed;
+  z-index: 300;
+  background-color: white;
+  inset: 100px 300px 50px 300px;
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  transition: transform 2ms ease-in;
+  border-radius: 20px;
+}
+
+.modal .close-button {
+  position: absolute;
+  right: 40px;
+  top: 20px;
+}
+
+.modal th,
+.modal td {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.405);
+  padding: 10px 50px;
+}
+
+.table-container {
+  overflow: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  margin: 100px 0px 0px;
+}
+
+.modal table {
+  padding: 0 40px;
+  overflow-y: scroll;
+}
+
+.x-mark {
+  position: absolute;
+  right: 30px;
+  top: 40px;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.x-mark div {
+  width: 30px;
+  height: 5px;
+  background-color: black;
+  overflow: hidden;
+}
+
+.x-mark:hover > div {
+  background-color: red;
+}
+
+.overlay {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.3);
+  transform: scale(100);
+  transition: transform 2ms ease-in;
+  z-index: 250;
+  cursor: pointer;
+}
+
+.transform {
+  transform: scale(0);
+  transform-origin: center;
+}
+
+.x-mark div:nth-child(1) {
+  transform: translateY(140%) rotate(45deg);
+}
+
+.x-mark div:nth-child(2) {
+  transform: translateY(75%) rotate(-45deg);
+}
