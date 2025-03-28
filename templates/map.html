@@ -85,7 +85,11 @@
                         <td><img src="{{data["icon"]}}" alt="data"></td>
                         <td>{{data["temp"]}}</td>
                         <td>{{data["wind_speed"]}}</td>
-                        <td>{{data["temp"]}}</td>
+                        <td>
+                            {% if data["rain"] %}
+                                {{data["rain"]}}
+                            {% endif %}
+                        </td>
                     </tr>
                 {% endfor %}
             </table>

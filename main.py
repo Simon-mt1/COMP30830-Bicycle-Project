@@ -51,6 +51,11 @@ def getWeatherData():
             newdata["icon"] = openWeather["URL"]["ICON"] + newdata["icon"] + ".png"
             newdata["dt"] = datetime.datetime.fromtimestamp(item["dt"]).strftime('%H%M')
             newdata["dt"] = newdata["dt"][0:2] + ":" + newdata["dt"][2:]
+            if "rain" in item:
+                newdata["rain"] = 0
+                for key in item["rain"]:
+                    newdata["rain"]+=item["rain"][key]
+
             changedData["hourly"].append(newdata)
 
         return changedData
@@ -96,11 +101,12 @@ def signup():
         result = User.query.filter(User.email == request.form["email"]).all()
         if len(result) != 0:
             is_active = False
+            return render_template('signup.html', is_active = is_active)
         else:
             u = User(request.form["first-name"], request.form["last-name"], request.form["email"], request.form["password"])
             db_session.add(u)
             db_session.commit()
-            return redirect(url_for('index'))
+            return redirect(url_for('login'))
     return render_template('signup.html', is_active = is_active)
 
 @app.route("/login", methods = ["POST", "GET"])
@@ -108,7 +114,7 @@ def login():
     is_active = True
     if request.method == "POST":
         result = User.query.filter(User.email == request.form["email"]).first()
-        if result.email != request.form["email"] or request.form["password"] != result.password:
+        if not result or request.form["password"] != result.password:
             is_active = False
             return render_template('login.html', is_active = is_active)
         else:
