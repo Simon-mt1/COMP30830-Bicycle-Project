@@ -16,7 +16,7 @@
     <!--Navbar-->
     <nav class="navbar">
       <div class="navbar-logo">
-        <a href="{{ url_for("index") }}">
+        <a href="{{ url_for("data.index") }}">
           <img
             src="{{ url_for('static', filename='images/logo.png') }}"
             alt="Dublin Bikes Logo"
@@ -24,10 +24,10 @@
         </a>
       </div>
       <div class="navbar-links">
-        <a href="{{ url_for("map") }}">MAP</a>
+        <a href="{{ url_for("data.map") }}">MAP</a>
         <a href="faq.html">FAQ</a>
         <a href="analytics.html">ANALYTICS</a>
-        <a href="{{ url_for("logout") }}">LOGOUT</a>
+        <a href="{{ url_for("auth.logout") }}">LOGOUT</a>
       </div>
     </nav>
 
