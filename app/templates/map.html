@@ -14,7 +14,7 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="navbar-logo">
-            <a href="{{ url_for("index")}}">
+            <a href="{{ url_for("data.index")}}">
                 
                     <img
                       src="{{ url_for('static', filename='images/logo.png') }}"
@@ -30,10 +30,10 @@
               </div>
           </div>
           <div class="navbar-links">
-            <a href="{{ url_for("map") }}">MAP</a>
+            <a href="{{ url_for("data.map") }}">MAP</a>
             <a href="faq.html">FAQ</a>
             <a href="analytics.html">ANALYTICS</a>
-            <a href="{{ url_for("logout") }}">LOGOUT</a>
+            <a href="{{ url_for("auth.logout") }}">LOGOUT</a>
           </div>
     </nav>
 
@@ -48,24 +48,26 @@
     <div id="map"></div>
     
     <div class="sidebar">
-        <div class="sidebar-image"></div>
-        <div class="sidebar-head">
-            <h3 class="heading"></h3>
+        <div class="sidebar-container">
+            <div class="sidebar-image"></div>
+            <div class="sidebar-head">
+                <h3 class="heading"></h3>
+            </div>
+    
+            <table class="sidebar-content">
+                <tr class="address">
+                    <td>Address</td>
+                    <td class="address-text">Noob</td>
+                </tr>
+                <tr class="bike">
+                    <td><img src="{{ url_for('static', filename='images/bike.png') }}" alt="Bike image" class="bike-image"></td>
+                    <td class="bikes-number"></td>
+                </tr>
+            </table>
+            <button class="direction-button">Directions</button>
         </div>
-
-        <table class="sidebar-content">
-            <tr class="address">
-                <td>Address</td>
-                <td class="address-text">Noob</td>
-            </tr>
-            <tr class="bike">
-                <td><img src="{{ url_for('static', filename='images/bike.png') }}" alt="Bike image" class="bike-image"></td>
-                <td class="bikes-number"></td>
-            </tr>
-        </table>
-        <button class="direction-button">Directions</button>
-        <button class="close-button">
-            Close
+        <button class="close-button" disabled>
+            >
         </button>
     </div>
 

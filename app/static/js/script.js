@@ -88,7 +88,6 @@ async function initMap() {
   const directionButton = document.querySelector(".direction-button");
   const mapbuttons = document.querySelectorAll(".map-button");
   const backbutton = document.querySelector(".back-button");
-  const placesDropdown = document.querySelector(".places-dropdown");
 
   sidebar.classList.remove("open");
 
@@ -167,7 +166,7 @@ async function initMap() {
       icon: {
         path: google.maps.SymbolPath.CIRCLE,
         scale: 17,
-        fillColor: "#ff5733",
+        fillColor: `${data[value] == 0 ? "red" : "green"}`,
         fillOpacity: 1,
         strokeWeight: 2,
         strokeColor: "#ffffff",
@@ -176,6 +175,10 @@ async function initMap() {
 
     marker.addListener("click", async () => {
       directionsRenderer.setMap(map);
+
+      closeButton.disabled = false;
+      closeButton.innerText = "<";
+      closeButton.style.cursor = "pointer";
 
       map.panTo(marker.getPosition());
       sidebarheading.innerText = data["address"];
@@ -214,6 +217,7 @@ async function initMap() {
       });
       backbutton.classList.toggle("display");
       sidebar.classList.remove("open");
+      closeButton.innerText = ">";
 
       var request = {
         origin: currentLocation,
@@ -232,6 +236,11 @@ async function initMap() {
 
     closeButton.addEventListener("click", () => {
       sidebar.classList.toggle("open");
+      if (closeButton.innerText == "<") {
+        closeButton.innerText = ">";
+      } else {
+        closeButton.innerText = "<";
+      }
     });
 
     backbutton.addEventListener("click", () => {

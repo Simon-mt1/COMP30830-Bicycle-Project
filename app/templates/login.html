@@ -3,20 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SignUp</title>
+    <title>Login</title>
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/style.css') }}"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
     <!--Navbar-->
     <nav class="navbar">
       <div class="navbar-logo">
-        <a href="{{ url_for("login") }}">
+        <a href="{{ url_for("data.index") }}">
           <img
             src="{{ url_for('static', filename='images/logo.png') }}"
             alt="Dublin Bikes Logo"
@@ -30,33 +30,11 @@
       <!-- Dublin Bikes Heading -->
       <h1 class="dublin-bikes-heading">Dublin Bikes</h1>
   
-      <!-- Sign Up Container -->
-      <div class="signup-container">
-        <h4>Register</h4>
+      <!--Login Container-->
+      <div class="login-container">
+        <h4>Login</h4>
   
-        <form class="signup-form" action="/signup" method="POST">
-          <div class="name-fields">
-            <div class="form-group">
-              <input
-                type="text"
-                id="first-name"
-                name="first-name"
-                placeholder="First Name"
-                required
-              />
-            </div>
-  
-            <div class="form-group">
-              <input
-                type="text"
-                id="last-name"
-                name="last-name"
-                placeholder="Last Name"
-                required
-              />
-            </div>
-          </div>
-  
+        <form class="login-form" method="POST" action="/login">
           <div class="form-group">
             <input
               type="email"
@@ -66,7 +44,6 @@
               required
             />
           </div>
-  
           <div class="form-group">
             <input
               type="password"
@@ -76,20 +53,25 @@
               required
             />
           </div>
-  
-          <button type="submit" class="register-button">REGISTER</button>
+            
+          <a href="#" class="forgot-password">
+            <span class="forgot-text">Forgot password?</span>
+            <span class="reset-text">Reset it here</span>
+          </a>
+          <button type="submit" class="login-button">LOGIN</button>
         </form>
   
-        <p class="email-exist {{ 'inactive' if is_active else '' }}">
-          An account with this Email ID already exist
+        <p class="invalid {{ 'inactive' if is_active else '' }}">
+          Invalid email or password
         </p>
   
-        <p class="login-link">
-          Already have an account? <a href="{{ url_for("login") }}">Login</a>
+        <p class="register-link">
+          Don't have an account?
+          <a href="{{ url_for("auth.signup") }}">Register</a>
         </p>
       </div>
-    </section>
-
+    </section>  
+    
     <!-- Footer -->
     <footer class="footer">
       <div class="footer-links">

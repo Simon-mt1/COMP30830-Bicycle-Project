@@ -356,7 +356,7 @@ input::placeholder {
 /* Map Buttons */
 .map-button {
   padding: 10px 20px;
-  background-color: #245b95;
+  background-color: #0056b3;
   border: none;
   border-radius: 18px;
   color: #fff;
@@ -368,7 +368,7 @@ input::placeholder {
 
 .back-button {
   padding: 10px 20px;
-  background-color: #245b95;
+  background-color: #0056b3;
   border: none;
   border-radius: 18px;
   color: #fff;
@@ -395,11 +395,33 @@ input::placeholder {
   width: 30%;
   height: 100%;
   background-color: white;
-  position: static;
+  position: relative;
   align-self: flex-start;
   transform: translateX(-100%);
   transition: 300ms transform ease-in;
+}
+
+.sidebar-container {
   overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.close-button {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  color: white;
+  top: 100px;
+  right: -40px;
+  border: none;
+  background-color: #0056b3;
+  font-weight: bold;
+  z-index: 100;
+  font-size: 20px;
+  cursor: not-allowed;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .sidebar-head {
@@ -411,29 +433,14 @@ input::placeholder {
   transform: translateX(0);
 }
 
-.close-button {
-  width: 60px;
-  height: 40px;
-  position: fixed;
-  top: 40px;
-  right: 30px;
-  color: white;
-  border: none;
-  background-color: red;
-  font-weight: bold;
-  z-index: 100;
-  cursor: pointer;
-  border-radius: 20px;
-}
-
 .close-button-disabled {
   cursor: not-allowed;
 }
 
 .close-button:hover {
-  border: 2px solid red;
+  border: 2px solid #0056b3;
   background-color: rgb(255, 255, 255);
-  color: red;
+  color: #0056b3;
 }
 
 .heading {
