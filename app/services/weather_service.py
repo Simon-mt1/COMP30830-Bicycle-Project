@@ -15,8 +15,15 @@ class WeatherService:
             response.raise_for_status()
             data = response.json()
 
-            weather_data = {"hourly": []}
+            data["hourly"] = data["hourly"][0:24]
+
+            currentDate = datetime.datetime.fromtimestamp(data["hourly"][0]["dt"]).strftime('%d-%m-%Y')
+            currentIcon = f'{env.OPEN_WEATHER["URL"]["ICON"]}{data["hourly"][0]["weather"][0]["icon"]}.png'
+            currentTemp = int(float(data["hourly"][0]["temp"]))
+
+            weather_data = {currentDate: []}
             for item in data["hourly"]:
+                date = datetime.datetime.fromtimestamp(item["dt"]).strftime('%d-%m-%Y')
                 formatted_item = {
                     "temp": int(float(item["temp"])),
                     "wind_speed": item["wind_speed"],
@@ -24,9 +31,13 @@ class WeatherService:
                     "dt": datetime.datetime.fromtimestamp(item["dt"]).strftime('%H:%M'),
                     "rain": sum(item.get("rain", {}).values()) if "rain" in item else 0
                 }
-                weather_data["hourly"].append(formatted_item)
+                if currentDate != date:
+                    currentDate = date
+                    weather_data[currentDate] = []
+                weather_data[currentDate].append(formatted_item)
 
-            return weather_data
+            weatherInfo = {"weather_data" : weather_data, "currentIcon" : currentIcon, "currentTemp" : currentTemp}
+            return weatherInfo
         except requests.RequestException as e:
             print(f"Error fetching weather data: {e}")
             return None

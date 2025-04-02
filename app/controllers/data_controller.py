@@ -27,7 +27,7 @@ def map():
         
         return render_template('map.html', jcdecauxData=jcdecauxData, weatherData=weatherData, googleMapApiKey=googleMapApiKey)
     
-    return redirect(url_for('login'))
+    return redirect(url_for('auth.login'))
 
 @data_bp.route("/index")
 def index():

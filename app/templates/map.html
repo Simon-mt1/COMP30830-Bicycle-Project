@@ -24,9 +24,9 @@
             </a>
           </div>
           <div class="temperature">
-              <p>{{weatherData["hourly"][0]["temp"]}}°C</p>
+              <p>{{weatherData["currentTemp"]}}°C</p>
               <div class="nav-image-container" onclick="handleWeatherIconClick()">
-                  <img src="{{weatherData["hourly"][0]["icon"]}}" alt="">
+                  <img src="{{weatherData["currentIcon"]}}" alt="">
               </div>
           </div>
           <div class="navbar-links">
@@ -73,28 +73,35 @@
 
     <div class="modal transform">
         <div class="table-container">
-            <table class="weather-table">
-                <tr>
-                    <th>Time</th>
-                    <th>Weather</th>
-                    <th>Temp</th>
-                    <th>Wind m/s</th>
-                    <th>Precipitation</th>
-                </tr>
-                {% for data in weatherData["hourly"] %}
-                    <tr>
-                        <td>{{data["dt"]}}</td>
-                        <td><img src="{{data["icon"]}}" alt="data"></td>
-                        <td>{{data["temp"]}}</td>
-                        <td>{{data["wind_speed"]}}</td>
-                        <td>
-                            {% if data["rain"] %}
-                                {{data["rain"]}}
-                            {% endif %}
-                        </td>
-                    </tr>
-                {% endfor %}
-            </table>
+            {% for dates in weatherData["weather_data"] %}
+                <p class="weather-date">{{ dates }}</p>
+                <table class="weather-table">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Weather</th>
+                            <th>Temp</th>
+                            <th>Wind m/s</th>
+                            <th>Precipitation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for data in weatherData["weather_data"][dates] %}
+                            <tr>
+                                <td>{{data["dt"]}}</td>
+                                <td><img src="{{data["icon"]}}" alt="data"></td>
+                                <td>{{data["temp"]}}</td>
+                                <td>{{data["wind_speed"]}}</td>
+                                <td>
+                                    {% if data["rain"] %}
+                                        {{data["rain"]}}
+                                    {% endif %}
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            {% endfor %}
         </div>
         <div class="x-mark">
             <div></div>
