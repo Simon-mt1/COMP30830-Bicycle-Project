@@ -89,7 +89,7 @@
                         {% for data in weatherData["weather_data"][dates] %}
                             <tr>
                                 <td>{{data["dt"]}}</td>
-                                <td><img src="{{data["icon"]}}" alt="data"></td>
+                                <td><img src="{{data["icon"]}}" alt="data" loading="lazy"></td>
                                 <td>{{data["temp"]}}</td>
                                 <td>{{data["wind_speed"]}}</td>
                                 <td>
