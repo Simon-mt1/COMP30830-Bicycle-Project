@@ -1,6 +1,6 @@
-# 🚀 Dublin bikes
+# 🚴‍♂️ Dublin Bikes
 
-**Dublin bikes** is a ✨ fantastic ✨ bikes sharing application which you can use to find out information about bike station around dublin. Whether you are searching for a station to pick up a bike or to drop off a bike, **Dublin bikes** is the application for you. 🎉
+**Dublin Bikes** is a **fantastic** bike-sharing application that helps you find information about bike stations around Dublin. Whether you're searching for a station to pick up or drop off a bike, **Dublin Bikes** is the perfect application for you! 🎉
 
 ---
 
@@ -8,62 +8,59 @@
 
 - [✨ Features](#-features)
 - [🚀 Getting Started](#-getting-started)
-  - [✅ Pre-requisites](#-pre-requisites)
+  - [✅ Prerequisites](#-prerequisites)
   - [🔧 Installation](#-installation)
-  - [⚙️ Configuration](#️-configuration)
+  - [⚙️ Configuration](#-configuration)
 - [💻 Usage](#-usage)
-- [🧬 Testing](#-testing)
+- [🧪 Testing](#-testing)
 - [🤝 Contributing](#-contributing)
-- [📝 License](#-license)
 - [📧 Contact](#-contact)
 
 ---
 
 ## ✨ Features
 
-- **Feature 1**: Login so that you have a user for yourself.
-- **Feature 2**: Look at the stations scattered across dublin in a map.
-- **Feature 3**: Checkout the address and direction from your current location of the stations.
-- **Feature 4**: Checkout the weather information for 24 hours so you can plan your bike journey.
-- **Feature 5**: Checkout the bike trend of the specific bike station.
+- **User Authentication**: Create an account and log in for a personalized experience.
+- **Interactive Map**: View stations across Dublin on a map.
+- **Navigation Assistance**: Get station addresses and directions from your current location.
+- **Weather Forecast**: Check 24-hour weather information to plan your bike trips.
+- **Bike Availability Trends**: Analyze bike availability trends for specific stations.
 
 ---
 
 ## 🚀 Getting Started
 
-### ✅ Pre-requisites
+### ✅ Prerequisites
 
-1. Conda - https://www.anaconda.com/docs/getting-started/miniconda/install
+Ensure you have Conda installed before proceeding. You can download it here:
+
+🔗 [Conda Installation Guide](https://www.anaconda.com/docs/getting-started/miniconda/install)
 
 ### 🔧 Installation
 
-To get started with **Dublin bikes**, follow these steps:
+Follow these steps to set up **Dublin Bikes**:
 
-1. Create a conda environment:
-
+1. **Create a Conda environment:**
    ```bash
    conda create -n your_env_name python=3.10
    ```
 
-2. Activate the environment:
-
+2. **Activate the environment:**
    ```bash
    conda activate your_env_name
    ```
 
-3. Navigate into current folder and Clone the repository:
-
+3. **Clone the repository:**
    ```bash
    git clone https://github.com/Simon-mt1/COMP30830-Bicycle-Project.git
    ```
 
-4. Navigate to the project directory:
-
+4. **Navigate to the project directory:**
    ```bash
    cd COMP30830-Bicycle-Project
    ```
 
-5. Install the dependencies:
+5. **Install dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
@@ -82,27 +79,24 @@ OPEN_WEATHER_API_KEY=your_open_weather_apikey
 
 ## 💻 Usage
 
-Here’s how to use **Dublin bikes**:
+To run **Dublin Bikes**, follow these steps:
 
-1. Run the project:
-
+1. **Start the application:**
    ```bash
    python main.py
    ```
 
-2. Access the application at `http://localhost:5000`.
+2. **Access the application** at `http://localhost:5000` in your browser.
 
-3. You should see the login page. You are register yourself and access the application.
+3. **Sign up and log in** to use the app.
 
-4. Navigate to the maps page from the navbar
-
-For more advanced usage, check out the [documentation](#). 📚
+4. **Navigate to the map page** via the navigation bar.
 
 ---
 
-## 🧬 Testing
+## 🧪 Testing
 
-To run the tests, use the following command:
+Run tests using the following command:
 
 ```bash
 npm test  # or pytest, etc.
@@ -112,43 +106,39 @@ npm test  # or pytest, etc.
 
 ## 🤝 Contributing
 
-We welcome contributions! 🎉 If you'd like to contribute, please follow these steps:
+We welcome contributions! 🎉 To contribute, follow these steps:
 
-1. Fork the repository.
-
-2. Create a new branch:
-
+1. **Fork the repository.**
+2. **Create a new branch:**
    ```bash
    git checkout -b feature/your-feature-name
    ```
-
-3. Commit your changes:
-
+3. **Commit your changes:**
    ```bash
    git commit -m "Add your awesome feature"
    ```
-
-4. Push to the branch:
-
+4. **Push to the branch:**
    ```bash
    git push origin feature/your-feature-name
    ```
-
-5. Open a pull request. 🚀
+5. **Open a pull request.** 🚀
 
 ---
 
 ## 📧 Contact
 
-If you have any questions or feedback, feel free to reach out:
+For questions or feedback, feel free to reach out:
 
 - **Email**: simonmaybury93@gmail.com 📩
 - **GitHub Issues**: [Open an Issue](https://github.com/Simon-mt1/COMP30830-Bicycle-Project/issues) 🐛
 
 ---
 
-Made with ❤️ by [Simon](https://github.com/Simon-mt1). Happy coding! 🎉
-Made with ❤️ by [Hardhik](https://github.com/hardhik1007-lab). Happy coding! 🎉
-Made with ❤️ by [Aadhithya](https://github.com/AadhithyaGanesh). Happy coding! 🎉
+### 👨‍💻 Made with ❤️ by:
 
----
+- [Simon](https://github.com/Simon-mt1)
+- [Hardhik](https://github.com/hardhik1007-lab)
+- [Aadhithya](https://github.com/AadhithyaGanesh)
+
+Happy coding! 🚀
+
