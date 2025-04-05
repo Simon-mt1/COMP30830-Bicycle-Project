@@ -30,8 +30,9 @@
               </div>
           </div>
           <div class="navbar-links">
+            <a href="index">HOME</a>
             <a href="{{ url_for("data.map") }}">MAP</a>
-            <a href="faq.html">FAQ</a>
+            <a href="faq">FAQ</a>
             <a href="analytics.html">ANALYTICS</a>
             <a href="{{ url_for("auth.logout") }}">LOGOUT</a>
           </div>
@@ -39,8 +40,11 @@
 
     <!-- Button Container -->
     <div class="map-button-container">
-        <button class="map-button" disabled onclick="handleButtonClick(event)">Available Bikes</button>
-        <button class="map-button disabled" onclick="handleButtonClick(event)">Available Spaces</button>
+        <div class="map-button-box">
+            <button class="map-button toggle-button" disabled onclick="handleButtonClick(event)">Available Bikes</button>
+            <button class="map-button toggle-button disabled" onclick="handleButtonClick(event)">Available Spaces</button>
+            <button class="map-button" onclick="goToNearestStation()">Nearest Station</button>
+        </div>
         <button class="back-button display">Exit directions</button>
     </div>
     
@@ -56,18 +60,19 @@
     
             <table class="sidebar-content">
                 <tr class="address">
-                    <td>Address</td>
+                    <td><img src="{{ url_for('static', filename='images/location.png') }}" alt="Location Icon" class="location-icon"></td>
                     <td class="address-text">Noob</td>
                 </tr>
                 <tr class="bike">
                     <td><img src="{{ url_for('static', filename='images/bike.png') }}" alt="Bike image" class="bike-image"></td>
-                    <td class="bikes-number"></td>
+                    <td class="bikes-number address-text"></td>
                 </tr>
             </table>
+    
             <button class="direction-button">Directions</button>
         </div>
         <button class="close-button" disabled>
-            >
+            
         </button>
     </div>
 

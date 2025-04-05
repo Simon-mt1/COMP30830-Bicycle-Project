@@ -1,14 +1,23 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   font-family: "Roboto Condensed", sans-serif;
   background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
-  height: 100vh;
+  flex: 1;
+}
+
+.main-wrapper {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  overflow: hidden;
 }
+
 
 button {
   font-family: "Roboto Condensed", sans-serif;
@@ -30,7 +39,7 @@ button {
 }
 
 .nav-image-container img {
-  background-color: #0056b3;
+  background-color: #245b95;
   border-radius: 100%;
 }
 
@@ -341,13 +350,13 @@ input::placeholder {
   z-index: 2;
   left: 50%;
   transform: translateX(-50%);
-  top: 100px;
+  top: 80px;
 }
 
 /* Map Buttons */
 .map-button {
   padding: 10px 20px;
-  background-color: #0056b3;
+  background-color: #245b95;
   border: none;
   border-radius: 18px;
   color: #fff;
@@ -359,7 +368,7 @@ input::placeholder {
 
 .back-button {
   padding: 10px 20px;
-  background-color: #0056b3;
+  background-color: #245b95;
   border: none;
   border-radius: 18px;
   color: #fff;
@@ -383,7 +392,7 @@ input::placeholder {
 }
 
 .sidebar {
-  width: 30%;
+  width: 25%;
   height: 100%;
   background-color: white;
   position: relative;
@@ -406,7 +415,7 @@ input::placeholder {
   top: 100px;
   right: -40px;
   border: none;
-  background-color: #0056b3;
+  background-color: #245b95;
   font-weight: bold;
   z-index: 100;
   font-size: 20px;
@@ -448,6 +457,7 @@ input::placeholder {
 .sidebar-content {
   margin-top: 30px;
   width: 100%;
+  border-collapse: collapse;
 }
 
 td {
@@ -646,4 +656,103 @@ td {
 
 .x-mark div:nth-child(2) {
   transform: translateY(75%) rotate(-45deg);
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.faq-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+}
+
+.faq-question {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.faq-answer {
+  margin-top: 10px;
+  display: none;
+  color: #444;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.faq-toggle-icon {
+  font-size: 24px;
+  color: #245b95;
+  width: 30px;         
+  text-align: right;  
+  margin-left: 20px;  
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+.faq-item.active .faq-toggle-icon::before {
+  content: "-";
+}
+
+.faq-toggle-icon::before {
+  content: "+";
+}
+
+.map-button-box {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.hide {
+  display: none !important;
+}
+
+.address {
+  border-bottom: 1px solid #dadce0; /* Google-style light divider */
+}
+
+.address td {
+  padding: 15px 20px; 
+  margin: 20px 25px;
+}
+
+.address-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;           /* Space between icon and text */
+  width: 100%;
+}
+
+.address-text {
+  font-size: 13px;
+  color: #3d3f42;
+  font-weight: 590;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  word-break: break-word;
+  flex: 1;  
+}
+
+.location-icon {
+  width: 20px;
 }

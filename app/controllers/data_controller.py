@@ -38,5 +38,8 @@ def index():
     
 @data_bp.route("/")
 def start():
-    print("HERE NOW")
     return redirect(url_for("auth.login"))
+
+@data_bp.route("/faq")
+def faq():
+    return render_template("faq.html")

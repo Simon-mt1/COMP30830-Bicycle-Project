@@ -1,4 +1,4 @@
-// Script to initialise Google Map
+// Script to
 
 let value = "available_bikes";
 let rendered = false;
@@ -16,15 +16,11 @@ const handleButtonClick = (event) => {
     value = "available_bike_stands";
   }
 
-  const list = document.querySelectorAll(".map-button");
+  const list = document.querySelectorAll(".toggle-button");
 
   for (let object of list) {
     object.classList.toggle("disabled");
-    if (object.disabled == true) {
-      object.disabled = false;
-    } else {
-      object.disabled = true;
-    }
+    object.disabled = !object.disabled;
   }
 
   initMap();
@@ -142,7 +138,7 @@ async function initMap() {
   ];
 
   // Create the map with custom styles
-  const map = new google.maps.Map(document.getElementById("map"), {
+  map = new google.maps.Map(document.getElementById("map"), {
     zoom: 15,
     center: dublin,
     styles: mapStyles,
@@ -217,6 +213,7 @@ async function initMap() {
       });
       backbutton.classList.toggle("display");
       sidebar.classList.remove("open");
+      document.querySelector(".map-button-box").classList.add("hide");
       closeButton.innerText = ">";
 
       var request = {
@@ -252,9 +249,54 @@ async function initMap() {
       directionsRenderer.setMap(null);
       directionsRenderer.setDirections({ routes: [] });
 
+      document.querySelector(".map-button-box").classList.remove("hide");
+
       initMap();
     });
+    
+    
+
   }
 
   rendered = true;
 }
+
+async function goToNearestStation() {
+  const location = await retrieveLocation();
+
+  if (!location) {
+    alert("Unable to retrieve your location.");
+    return;
+  }
+
+  let nearest = null;
+  let minDistance = Infinity;
+
+  for (let i = 0; i < mapData.length; i++) {
+    const station = mapData[i];
+    const stationPos = station["position"];
+
+    // Skip stations with 0 of selected value
+    if (station[value] === 0) continue;
+
+    const distance = Math.sqrt(
+      Math.pow(location.lat - stationPos.lat, 2) +
+      Math.pow(location.lng - stationPos.lng, 2)
+    );
+
+    if (distance < minDistance) {
+      minDistance = distance;
+      nearest = { station, index: i };
+    }
+  }
+
+  if (!nearest) {
+    alert("No nearby stations with availability.");
+    return;
+  }
+
+  // Trigger the nearest marker's click event to reuse logic
+  google.maps.event.trigger(markers[nearest.index], 'click');
+}
+
+
