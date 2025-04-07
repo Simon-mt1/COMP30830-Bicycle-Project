@@ -350,7 +350,7 @@ input::placeholder {
   z-index: 2;
   left: 50%;
   transform: translateX(-50%);
-  top: 80px;
+  top: 65px;
 }
 
 /* Map Buttons */
@@ -374,7 +374,7 @@ input::placeholder {
   color: #fff;
   font-size: 14px;
   cursor: pointer;
-  margin: 5px;
+  margin: 15px;
   transition: background-color 0.3s ease;
 }
 
@@ -508,16 +508,21 @@ td {
 }
 
 .temperature {
-  margin-left: 250px;
+  /* margin-left: 250px; */
   width: 100px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  position: absolute;
+  /* z-index: 2; */
+  left: 48.8%;
+  transform: translateX(-50%);
 }
 
 .temperature p {
   color: black;
   font-weight: bold;
+  position: left;
 }
 
 .sidebar-image {
@@ -713,9 +718,9 @@ td {
 }
 
 .map-button-box {
-  background-color: white;
-  border-radius: 5px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f4f4f4;
+  border-radius: 0px;
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
   padding: 10px 20px;
   display: flex;
   justify-content: center;
