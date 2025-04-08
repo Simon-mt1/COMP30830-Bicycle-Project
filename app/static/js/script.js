@@ -188,6 +188,51 @@ async function initMap() {
       // sidebarImage.src = "";
       // sidebarImage.alt = "";
 
+      const stationData = {
+        number: data.number,
+        bike_stands: data.available_bike_stands,
+        lat: marker.getPosition().lat(),
+        lon: marker.getPosition().lng(),
+        capacity: data.bike_stands
+    };
+        /*year: new Date().getFullYear(),
+        month: new Date().getMonth() + 1,
+        day: new Date().getDate(),
+        hour: new Date().getHours(),
+        minute: new Date().getMinutes(),
+        weekday: new Date().getDay(),*/    
+    try {
+        console.log(marker, stationData)
+        const response = await fetch('/predict', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(stationData),
+        });
+
+        const data = await response.json();
+        console.log('Prediction:', data.prediction);
+
+        // Update the prediction in the sidebar
+        const predictionElement = document.getElementById('prediction-text');
+        predictionElement.innerHTML = `Prediction: ${Math.floor(+data.prediction)}`;
+
+        /// Update other UI elements if necessary
+        /*const sidebarheading = document.querySelector(".heading");
+        const bikesNumber = document.querySelector(".bikes-number");
+        sidebarheading.innerText = marker.title; // Or any other relevant info
+        bikesNumber.innerText = `${marker.num_docks_available} bikes available`;
+      
+        // Open sidebar or modal if needed
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.classList.add('open');*/
+
+    } catch (error) {
+        console.log(`Error: ${error}`);
+    }
+
+
       setTimeout(() => {
         sidebar.classList.add("open");
         map.setZoom(16);
@@ -198,7 +243,9 @@ async function initMap() {
       };
     });
 
-    markers.push(marker);
+
+       
+
   }
 
   if (!rendered) {
@@ -298,5 +345,4 @@ async function goToNearestStation() {
   // Trigger the nearest marker's click event to reuse logic
   google.maps.event.trigger(markers[nearest.index], 'click');
 }
-
 

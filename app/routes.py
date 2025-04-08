@@ -1,6 +1,7 @@
 from flask import Flask
 from app.controllers.auth_controller import auth_bp
 from app.controllers.data_controller import data_bp
+from app.controllers.prediction_controller import predict_bp
 from datetime import timedelta
 
 def create_app():
@@ -11,5 +12,6 @@ def create_app():
 
     app.register_blueprint(auth_bp)
     app.register_blueprint(data_bp)
+    app.register_blueprint(predict_bp)
 
     return app
