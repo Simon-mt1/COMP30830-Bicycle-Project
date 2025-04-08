@@ -41,21 +41,25 @@ Ensure you have Conda installed before proceeding. You can download it here:
 Follow these steps to set up **Dublin Bikes**:
 
 1. **Create a Conda environment:**
+
    ```bash
    conda create -n your_env_name python=3.10
    ```
 
 2. **Activate the environment:**
+
    ```bash
    conda activate your_env_name
    ```
 
 3. **Clone the repository:**
+
    ```bash
    git clone https://github.com/Simon-mt1/COMP30830-Bicycle-Project.git
    ```
 
 4. **Navigate to the project directory:**
+
    ```bash
    cd COMP30830-Bicycle-Project
    ```
@@ -73,6 +77,12 @@ To configure the project, create a `.env` file in the root directory and add the
 JCDECAUX_API_KEY=your_jcdecaux_apikey
 GOOGLE_MAPS_API_KEY=your_google_apikey
 OPEN_WEATHER_API_KEY=your_open_weather_apikey
+
+MYSQL_DB_USERNAME=your_db_username
+MYSQL_DB_PASSWORD=your_db_password
+MYSQL_DB_URL=your_db_url
+MYSQL_DB_PORT=your_db_port
+MYSQL_DB_NAME=your_db_name
 ```
 
 ---
@@ -82,6 +92,7 @@ OPEN_WEATHER_API_KEY=your_open_weather_apikey
 To run **Dublin Bikes**, follow these steps:
 
 1. **Start the application:**
+
    ```bash
    python main.py
    ```
@@ -92,7 +103,7 @@ To run **Dublin Bikes**, follow these steps:
 
 4. **Navigate to the map page** via the navigation bar.
 
----
+#### For more advanced usage, check out the - [Documentation](https://Simon-mt1.github.io/COMP30830-Bicycle-Project/) .
 
 ## 🧪 Testing
 
@@ -141,4 +152,3 @@ For questions or feedback, feel free to reach out:
 - [Aadhithya](https://github.com/AadhithyaGanesh)
 
 Happy coding! 🚀
-

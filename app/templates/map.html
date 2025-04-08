@@ -43,7 +43,7 @@
         <div class="map-button-box">
             <button class="map-button toggle-button" disabled onclick="handleButtonClick(event)">Available Bikes</button>
             <button class="map-button toggle-button disabled" onclick="handleButtonClick(event)">Available Spaces</button>
-            <button class="map-button" onclick="goToNearestStation()">Nearest Station</button>
+            <button class="map-button disabled" onclick="goToNearestStation()">Nearest Station</button>
         </div>
         <button class="back-button display">Exit directions</button>
     </div>
@@ -74,6 +74,7 @@
                 <h4>Bike Availability Prediction:</h4>
                 <p id="prediction-text">Loading...</p> <!-- Placeholder text until prediction is available -->
             </div>
+            <div class="direction-panel"></div>
         </div>
         <!-- Prediction Result Below Directions Button -->
         
@@ -82,7 +83,9 @@
         </button>
     </div>
 
+
     <div class="modal transform">
+        <div class="weather-title">24 Hour Forecast</div>
         <div class="table-container">
             {% for dates in weatherData["weather_data"] %}
                 <p class="weather-date">{{ dates }}</p>

@@ -1,13 +1,15 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
   display: flex;
   flex-direction: column;
+  overflow-y: hidden;
 }
 
 body {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   flex: 1;
 }
@@ -18,9 +20,8 @@ body {
   flex-direction: column;
 }
 
-
 button {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 .navbar {
@@ -350,7 +351,7 @@ input::placeholder {
   z-index: 2;
   left: 50%;
   transform: translateX(-50%);
-  top: 80px;
+  top: 65px;
 }
 
 /* Map Buttons */
@@ -374,7 +375,7 @@ input::placeholder {
   color: #fff;
   font-size: 14px;
   cursor: pointer;
-  margin: 5px;
+  margin: 15px;
   transition: background-color 0.3s ease;
 }
 
@@ -508,16 +509,21 @@ td {
 }
 
 .temperature {
-  margin-left: 250px;
+  /* margin-left: 250px; */
   width: 100px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  position: absolute;
+  /* z-index: 2; */
+  left: 48.8%;
+  transform: translateX(-50%);
 }
 
 .temperature p {
   color: black;
   font-weight: bold;
+  position: left;
 }
 
 .sidebar-image {
@@ -560,6 +566,7 @@ td {
   background-color: white;
   inset: 10% 20% 10% 20%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   padding: 25px;
   border-radius: 20px;
@@ -575,7 +582,7 @@ td {
   overflow: auto;
   overflow-x: hidden;
   scrollbar-width: thin;
-  margin: 25px 0px 0px;
+  margin: 0px 0px 0px;
   width: 100%;
 }
 
@@ -602,8 +609,8 @@ td {
 }
 
 .weather-date {
-  font-size: 25px;
-  margin: 50px 0px 50px 20px;
+  font-size: 20px;
+  margin: 40px 0px 20px 20px;
   font-weight: bold;
   text-align: center;
 }
@@ -695,9 +702,9 @@ td {
 .faq-toggle-icon {
   font-size: 24px;
   color: #245b95;
-  width: 30px;         
-  text-align: right;  
-  margin-left: 20px;  
+  width: 30px;
+  text-align: right;
+  margin-left: 20px;
 }
 
 .faq-item.active .faq-answer {
@@ -713,9 +720,9 @@ td {
 }
 
 .map-button-box {
-  background-color: white;
-  border-radius: 5px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f4f4f4;
+  border-radius: 0px;
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
   padding: 10px 20px;
   display: flex;
   justify-content: center;
@@ -732,14 +739,14 @@ td {
 }
 
 .address td {
-  padding: 15px 20px; 
+  padding: 15px 20px;
   margin: 20px 25px;
 }
 
 .address-row {
   display: flex;
   align-items: center;
-  gap: 8px;           /* Space between icon and text */
+  gap: 8px; /* Space between icon and text */
   width: 100%;
 }
 
@@ -750,9 +757,26 @@ td {
   font-family: Arial, sans-serif;
   line-height: 1.5;
   word-break: break-word;
-  flex: 1;  
+  flex: 1;
 }
 
 .location-icon {
   width: 20px;
+}
+
+.weather-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  color: #245b95;
+}
+
+.direction-panel {
+  padding: 15px 20px;
+  line-height: 25px;
+  margin-bottom: 200px;
+  font-size: 13px;
+  font-weight: 500;
 }
