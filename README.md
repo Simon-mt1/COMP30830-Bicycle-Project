@@ -103,7 +103,7 @@ To run **Dublin Bikes**, follow these steps:
 
 4. **Navigate to the map page** via the navigation bar.
 
-## For more advanced usage, check out the - [Documentation](https://github.com/Aadhithya-Ganesh/sphinx-test) .
+#### For more advanced usage, check out the - [Documentation](https://aadhithya-ganesh.github.io/sphinx-test/) .
 
 ## 🧪 Testing
 
