@@ -43,7 +43,7 @@
         <div class="map-button-box">
             <button class="map-button toggle-button" disabled onclick="handleButtonClick(event)">Available Bikes</button>
             <button class="map-button toggle-button disabled" onclick="handleButtonClick(event)">Available Spaces</button>
-            <button class="map-button" onclick="goToNearestStation()">Nearest Station</button>
+            <button class="map-button disabled" onclick="goToNearestStation()">Nearest Station</button>
         </div>
         <button class="back-button display">Exit directions</button>
     </div>
@@ -70,11 +70,13 @@
             </table>
     
             <button class="direction-button">Directions</button>
+            <div class="direction-panel"></div>
         </div>
         <button class="close-button" disabled>
             
         </button>
     </div>
+
 
     <div class="modal transform">
         <div class="weather-title">24 Hour Forecast</div>

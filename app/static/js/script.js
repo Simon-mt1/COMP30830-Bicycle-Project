@@ -84,6 +84,7 @@ async function initMap() {
   const directionButton = document.querySelector(".direction-button");
   const mapbuttons = document.querySelectorAll(".map-button");
   const backbutton = document.querySelector(".back-button");
+  const directionPanel = document.querySelector(".direction-panel");
 
   sidebar.classList.remove("open");
 
@@ -212,7 +213,6 @@ async function initMap() {
         item.classList.toggle("display");
       });
       backbutton.classList.toggle("display");
-      sidebar.classList.remove("open");
       document.querySelector(".map-button-box").classList.add("hide");
       closeButton.innerText = ">";
 
@@ -225,6 +225,19 @@ async function initMap() {
       directionsService.route(request, (result, status) => {
         if (status == google.maps.DirectionsStatus.OK) {
           directionsRenderer.setDirections(result);
+
+          const steps = result.routes[0].legs[0].steps;
+          let directionsText = "";
+
+          steps.forEach((step, index) => {
+            directionsText += `${index + 1}. ${step.instructions.replace(
+              /<[^>]+>/g,
+              ""
+            )}\n`;
+          });
+
+          console.log(directionsText);
+          directionPanel.innerText = directionsText;
         } else {
           console.error("Directions request failed due to " + status);
         }
@@ -246,6 +259,11 @@ async function initMap() {
       });
       backbutton.classList.toggle("display");
 
+      closeButton.disabled = true;
+      closeButton.style.cursor = "not-allowed";
+
+      directionPanel.innerText = "";
+
       directionsRenderer.setMap(null);
       directionsRenderer.setDirections({ routes: [] });
 
@@ -253,9 +271,6 @@ async function initMap() {
 
       initMap();
     });
-    
-    
-
   }
 
   rendered = true;
@@ -281,7 +296,7 @@ async function goToNearestStation() {
 
     const distance = Math.sqrt(
       Math.pow(location.lat - stationPos.lat, 2) +
-      Math.pow(location.lng - stationPos.lng, 2)
+        Math.pow(location.lng - stationPos.lng, 2)
     );
 
     if (distance < minDistance) {
@@ -296,7 +311,5 @@ async function goToNearestStation() {
   }
 
   // Trigger the nearest marker's click event to reuse logic
-  google.maps.event.trigger(markers[nearest.index], 'click');
+  google.maps.event.trigger(markers[nearest.index], "click");
 }
-
-
