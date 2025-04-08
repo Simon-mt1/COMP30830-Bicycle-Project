@@ -1,0 +1,21 @@
+.. Bicycle project documentation master file, created by
+   sphinx-quickstart on Tue Apr  8 11:45:03 2025.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Bicycle project documentation
+=============================
+
+**Dublin Bikes** is a **fantastic** bike-sharing application that helps you find information about bike stations around Dublin. Whether you're searching for a station to pick up or drop off a bike, **Dublin Bikes** is the perfect application for you! 🎉
+
+
+.. toctree::
+   :maxdepth: 5
+   :caption: Contents:
+
+   main
+   database
+   env
+   App
+
+

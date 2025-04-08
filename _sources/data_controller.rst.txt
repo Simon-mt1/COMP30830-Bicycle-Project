@@ -1,0 +1,7 @@
+Data controller
+=============================
+
+.. automodule:: app.controllers.data_controller
+   :members:
+   :undoc-members:
+   :show-inheritance:

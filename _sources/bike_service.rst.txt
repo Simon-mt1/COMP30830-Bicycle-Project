@@ -1,0 +1,7 @@
+Bike Service
+=============================
+
+.. automodule:: app.services.bike_service
+   :members:
+   :undoc-members:
+   :show-inheritance:

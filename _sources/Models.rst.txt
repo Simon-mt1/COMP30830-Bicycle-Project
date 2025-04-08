@@ -1,0 +1,8 @@
+Models
+=============================
+
+.. toctree::
+   :maxdepth: 5
+
+   user
+
