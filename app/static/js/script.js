@@ -185,39 +185,41 @@ async function initMap() {
         data["bike_stands"] +
         " bikes available";
 
-      // place = await fetchPlaces(data["address"]);
-      // sidebarImage.src = "";
-      // sidebarImage.alt = "";
+      place = await fetchPlaces(data["address"]);
+      sidebarImage.src = "";
+      sidebarImage.alt = "";
 
       const stationData = {
         number: data.number,
         bike_stands: data.available_bike_stands,
         lat: marker.getPosition().lat(),
         lon: marker.getPosition().lng(),
-        capacity: data.bike_stands
-    };
-        /*year: new Date().getFullYear(),
+        capacity: data.bike_stands,
+      };
+      /*year: new Date().getFullYear(),
         month: new Date().getMonth() + 1,
         day: new Date().getDate(),
         hour: new Date().getHours(),
         minute: new Date().getMinutes(),
-        weekday: new Date().getDay(),*/    
-    try {
-        console.log(marker, stationData)
-        const response = await fetch('/predict', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(stationData),
+        weekday: new Date().getDay(),*/
+      try {
+        console.log(marker, stationData);
+        const response = await fetch("/predict", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(stationData),
         });
 
         const data = await response.json();
-        console.log('Prediction:', data.prediction);
+        console.log("Prediction:", data.prediction);
 
         // Update the prediction in the sidebar
-        const predictionElement = document.getElementById('prediction-text');
-        predictionElement.innerHTML = `Prediction: ${Math.floor(+data.prediction)}`;
+        const predictionElement = document.getElementById("prediction-text");
+        predictionElement.innerHTML = `Prediction: ${Math.floor(
+          +data.prediction
+        )}`;
 
         /// Update other UI elements if necessary
         /*const sidebarheading = document.querySelector(".heading");
@@ -228,11 +230,9 @@ async function initMap() {
         // Open sidebar or modal if needed
         const sidebar = document.querySelector('.sidebar');
         sidebar.classList.add('open');*/
-
-    } catch (error) {
+      } catch (error) {
         console.log(`Error: ${error}`);
-    }
-
+      }
 
       setTimeout(() => {
         sidebar.classList.add("open");
@@ -244,21 +244,20 @@ async function initMap() {
       };
     });
 
-
-       
-
+    markers.push(marker);
   }
 
   if (!rendered) {
     directionButton.addEventListener("click", () => {
       for (let marker of markers) {
         marker.setMap(null);
-        markers = [];
       }
+      markers = [];
 
       mapbuttons.forEach((item) => {
         item.classList.toggle("display");
       });
+
       backbutton.classList.toggle("display");
       document.querySelector(".map-button-box").classList.add("hide");
       closeButton.innerText = ">";
@@ -283,7 +282,6 @@ async function initMap() {
             )}\n`;
           });
 
-          console.log(directionsText);
           directionPanel.innerText = directionsText;
         } else {
           console.error("Directions request failed due to " + status);

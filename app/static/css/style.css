@@ -774,9 +774,14 @@ td {
 }
 
 .direction-panel {
+  margin-top: 15px;
   padding: 15px 20px;
   line-height: 25px;
-  margin-bottom: 200px;
   font-size: 13px;
   font-weight: 500;
+}
+
+.prediction-result {
+  margin: 10px 0px 100px;
+  padding: 15px 20px;
 }
