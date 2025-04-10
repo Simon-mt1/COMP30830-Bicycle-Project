@@ -74,21 +74,3 @@ def logout():
     """
     session.pop("user", None)
     return redirect(url_for('auth.login'))
-
-
-@auth_bp.route("/forgot-password", methods=["POST", "GET"])
-def forgotPassword():
-    is_active = True
-    if request.method == "GET":
-        if "user" in session:
-            return redirect(url_for('data.home'))
-        else:
-            return render_template('forgot_password.html', is_active=is_active, mail_sent=True)
-    elif request.method == "POST":
-        user = AuthService.forgotPassword(request.form)
-        if not user:
-            is_active = False
-            return render_template('forgot_password.html', is_active=is_active, mail_sent=True)
-        
-        print(AuthService.sendEmail(user))
-        return render_template('forgot_password.html', is_active=is_active, mail_sent=False)
