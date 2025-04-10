@@ -1,19 +1,28 @@
 // Script to
 
 let value = "available_bikes";
-let rendered = false;
+
+const dublin = { lat: 53.349805, lng: -6.26031 };
+const sidebar = document.querySelector(".sidebar");
+const closeButton = document.querySelector(".close-button");
+const sidebarheading = document.querySelector(".heading");
+const bikesNumber = document.querySelector(".bikes-number");
+const sidebarImage = document.querySelector(".sidebar-image");
+const directionButton = document.querySelector(".direction-button");
+const mapbuttons = document.querySelectorAll(".map-button");
+const backbutton = document.querySelector(".back-button");
+const directionPanel = document.querySelector(".direction-panel");
+
 let markers = [];
-let clickedLocation = null;
 
-let directionsService;
-let directionsRenderer;
-let map;
-
-const handleButtonClick = (event) => {
+const handleMapButtonClick = (event) => {
   if (event.target.innerHTML === "Available Bikes") {
     value = "available_bikes";
-  } else {
+  } else if (event.target.innerHTML === "Available Spaces") {
     value = "available_bike_stands";
+  } else {
+    goToNearestStation(markers);
+    return;
   }
 
   const list = document.querySelectorAll(".toggle-button");
@@ -26,65 +35,14 @@ const handleButtonClick = (event) => {
   initMap();
 };
 
-const modal = document.querySelector(".modal");
-const overlay = document.querySelector(".overlay");
-
-const handleWeatherIconClick = (event) => {
-  modal.classList.remove("transform");
-  overlay.classList.remove("transform");
-};
-
-document.querySelector(".x-mark").addEventListener("click", () => {
-  modal.classList.add("transform");
-  overlay.classList.add("transform");
-});
-
-overlay.addEventListener("click", () => {
-  modal.classList.add("transform");
-  overlay.classList.add("transform");
-});
-
-async function getCurrentLocation() {
-  return new Promise((resolve, reject) => {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          resolve({
-            lat: position.coords.latitude,
-            lng: position.coords.longitude,
-          });
-        },
-        (error) => {
-          reject("Error getting location: " + error.message);
-        }
-      );
-    } else {
-      reject("Geolocation is not supported by this browser.");
-    }
-  });
-}
-
-async function retrieveLocation() {
-  try {
-    const location = await getCurrentLocation();
-    return location;
-  } catch (error) {
-    console.error(error);
-  }
-}
-
 async function initMap() {
   // Center the map on Dublin
-  const dublin = { lat: 53.349805, lng: -6.26031 };
-  const sidebar = document.querySelector(".sidebar");
-  const closeButton = document.querySelector(".close-button");
-  const sidebarheading = document.querySelector(".heading");
-  const bikesNumber = document.querySelector(".bikes-number");
-  const sidebarImage = document.querySelector(".sidebar-image");
-  const directionButton = document.querySelector(".direction-button");
-  const mapbuttons = document.querySelectorAll(".map-button");
-  const backbutton = document.querySelector(".back-button");
-  const directionPanel = document.querySelector(".direction-panel");
+  let rendered = false;
+  let clickedLocation = null;
+
+  let directionsService;
+  let directionsRenderer;
+  let map;
 
   sidebar.classList.remove("open");
 
@@ -185,9 +143,9 @@ async function initMap() {
         data["bike_stands"] +
         " bikes available";
 
-      place = await fetchPlaces(data["address"]);
-      sidebarImage.src = "";
-      sidebarImage.alt = "";
+      // place = await fetchPlaces(data["address"]);
+      // sidebarImage.src = "";
+      // sidebarImage.alt = "";
 
       const stationData = {
         number: data.number,
@@ -203,7 +161,6 @@ async function initMap() {
         minute: new Date().getMinutes(),
         weekday: new Date().getDay(),*/
       try {
-        console.log(marker, stationData);
         const response = await fetch("/predict", {
           method: "POST",
           headers: {
@@ -213,7 +170,6 @@ async function initMap() {
         });
 
         const data = await response.json();
-        console.log("Prediction:", data.prediction);
 
         // Update the prediction in the sidebar
         const predictionElement = document.getElementById("prediction-text");
@@ -261,6 +217,8 @@ async function initMap() {
       backbutton.classList.toggle("display");
       document.querySelector(".map-button-box").classList.add("hide");
       closeButton.innerText = ">";
+      directionButton.style.cursor = "not-allowed";
+      directionButton.disabled = !directionButton.disabled;
 
       var request = {
         origin: currentLocation,
@@ -307,6 +265,9 @@ async function initMap() {
       closeButton.disabled = true;
       closeButton.style.cursor = "not-allowed";
 
+      directionButton.style.cursor = "pointer";
+      directionButton.disabled = !directionButton.disabled;
+
       directionPanel.innerText = "";
 
       directionsRenderer.setMap(null);
@@ -319,42 +280,4 @@ async function initMap() {
   }
 
   rendered = true;
-}
-
-async function goToNearestStation() {
-  const location = await retrieveLocation();
-
-  if (!location) {
-    alert("Unable to retrieve your location.");
-    return;
-  }
-
-  let nearest = null;
-  let minDistance = Infinity;
-
-  for (let i = 0; i < mapData.length; i++) {
-    const station = mapData[i];
-    const stationPos = station["position"];
-
-    // Skip stations with 0 of selected value
-    if (station[value] === 0) continue;
-
-    const distance = Math.sqrt(
-      Math.pow(location.lat - stationPos.lat, 2) +
-        Math.pow(location.lng - stationPos.lng, 2)
-    );
-
-    if (distance < minDistance) {
-      minDistance = distance;
-      nearest = { station, index: i };
-    }
-  }
-
-  if (!nearest) {
-    alert("No nearby stations with availability.");
-    return;
-  }
-
-  // Trigger the nearest marker's click event to reuse logic
-  google.maps.event.trigger(markers[nearest.index], "click");
 }

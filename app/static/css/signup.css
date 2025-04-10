@@ -1,0 +1,80 @@
+.signup-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.inactive {
+  display: none;
+}
+
+/* Name Fields (First Name and Last Name) */
+.name-fields {
+  display: flex;
+  gap: 10px; /* Space between First Name and Last Name fields */
+}
+
+.name-fields .form-group {
+  flex: 1; /* Each field takes equal space */
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+.email-exist {
+  color: red;
+  font-size: 12px;
+}
+
+/* Register Button */
+.register-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #245b95;
+  border: none;
+  border-radius: 18px;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.register-button:hover {
+  background-color: #0056b3;
+}
+
+/* Login Link */
+.login-link {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #555;
+}
+
+.login-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}

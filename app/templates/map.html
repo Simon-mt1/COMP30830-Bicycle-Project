@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Map</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/map.css') }}">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -14,7 +15,7 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="navbar-logo">
-            <a href="{{ url_for("data.index")}}">
+            <a href="{{ url_for("data.home")}}">
                 
                     <img
                       src="{{ url_for('static', filename='images/logo.png') }}"
@@ -30,10 +31,9 @@
               </div>
           </div>
           <div class="navbar-links">
-            <a href="index">HOME</a>
+            <a href="{{ url_for("data.home") }}">HOME</a>
             <a href="{{ url_for("data.map") }}">MAP</a>
-            <a href="faq">FAQ</a>
-            <a href="analytics.html">ANALYTICS</a>
+            <a href="{{ url_for("data.faq") }}">FAQ</a>
             <a href="{{ url_for("auth.logout") }}">LOGOUT</a>
           </div>
     </nav>
@@ -41,9 +41,9 @@
     <!-- Button Container -->
     <div class="map-button-container">
         <div class="map-button-box">
-            <button class="map-button toggle-button" disabled onclick="handleButtonClick(event)">Available Bikes</button>
-            <button class="map-button toggle-button disabled" onclick="handleButtonClick(event)">Available Spaces</button>
-            <button class="map-button disabled" onclick="goToNearestStation()">Nearest Station</button>
+            <button class="map-button toggle-button" disabled onclick="handleMapButtonClick(event)">Available Bikes</button>
+            <button class="map-button toggle-button disabled" onclick="handleMapButtonClick(event)">Available Spaces</button>
+            <button class="map-button disabled" onclick="handleMapButtonClick(event)">Nearest Station</button>
         </div>
         <button class="back-button display">Exit directions</button>
     </div>
@@ -61,7 +61,7 @@
             <table class="sidebar-content">
                 <tr class="address">
                     <td><img src="{{ url_for('static', filename='images/location.png') }}" alt="Location Icon" class="location-icon"></td>
-                    <td class="address-text">Noob</td>
+                    <td class="address-text">Address</td>
                 </tr>
                 <tr class="bike">
                     <td><img src="{{ url_for('static', filename='images/bike.png') }}" alt="Bike image" class="bike-image"></td>
@@ -129,8 +129,10 @@
         const weatherData = JSON.parse('{{ weatherData | tojson | safe }}');
         const googleapis = JSON.parse('{{ googleMapApiKey | tojson | safe }}');
     </script>
-    <script src='{{ url_for('static', filename='js/script.js') }}'></script>
+    <script src='{{ url_for('static', filename='js/map.js') }}'></script>
     <script src="{{ url_for('static', filename='js/fetchPlace.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/fetchLocation.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/weather.js') }}"></script>
     <script src={{"https://maps.googleapis.com/maps/api/js?" + "key=" + googleMapApiKey + "&callback=initMap"}}></script>
     
 </body>

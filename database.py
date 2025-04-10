@@ -51,5 +51,5 @@ def init_db():
     Imports:
         - app.models.user: Ensures the User model is registered before table creation.
     """
-    import app.models.user
+    import app.entities.user
     Base.metadata.create_all(bind=engine)

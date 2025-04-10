@@ -5,7 +5,7 @@ Defines routes related to maps, FAQs, and the homepage.
 
 **Routes:**\n
 - /map: Displays the Google Map with bike stations and weather info.\n
-- /index: Dashboard/homepage after user login.\n
+- /home: Dashboard/homepage after user login.\n
 - /: Redirects to the login page.\n
 - /faq: Displays the FAQ page.\n
 """
@@ -50,8 +50,8 @@ def map():
     
     return redirect(url_for('auth.login'))
 
-@data_bp.route("/index")
-def index():
+@data_bp.route("/home")
+def home():
     """
     Route to render the main dashboard page.
 
@@ -61,7 +61,7 @@ def index():
         Response: Rendered index page or redirect to root.
     """
     if "user" in session:
-        return render_template('index.html')
+        return render_template('home.html')
     else:
         return redirect('/')
 
@@ -73,7 +73,10 @@ def start():
     Returns:
         Response: Redirect to login page.
     """
-    return redirect(url_for("auth.login"))
+    if "user" in session:
+        return redirect(url_for("data.home"))
+    else:
+        return redirect(url_for("auth.login"))
 
 @data_bp.route("/faq")
 def faq():
@@ -83,4 +86,7 @@ def faq():
     Returns:
         Response: Rendered FAQ HTML page.
     """
-    return render_template("faq.html")
+    if "user" in session:
+        return render_template("faq.html")
+    else:
+        return redirect(url_for('auth.login'))
