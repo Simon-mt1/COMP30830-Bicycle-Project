@@ -10,6 +10,6 @@ def predict():
     # Call the service to get prediction
     prediction = BikePredictionService.predict_bike_availability(data)
     # Return the prediction result
-    return jsonify({'prediction': prediction[0]})
+    return jsonify({'prediction': prediction})
 
 
