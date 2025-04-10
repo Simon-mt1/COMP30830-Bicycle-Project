@@ -1,7 +1,7 @@
-User
+Prediction controller
 =============================
 
-.. automodule:: app.entities.user
+.. automodule:: app.controllers.prediction_controller
    :members:
    :undoc-members:
    :show-inheritance:

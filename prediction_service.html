@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Weather Service &mdash; Bicycle project 1.0.0 documentation</title>
+  <title>Prediction Service &mdash; Bicycle project 1.0.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
 
@@ -19,8 +19,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Prediction Service" href="prediction_service.html" />
-    <link rel="prev" title="Bike Service" href="bike_service.html" /> 
+    <link rel="next" title="Models" href="Models.html" />
+    <link rel="prev" title="Weather Service" href="weather_service.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -52,11 +52,11 @@
 <li class="toctree-l2 current"><a class="reference internal" href="Services.html">Service</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="auth_service.html">Auth service</a></li>
 <li class="toctree-l3"><a class="reference internal" href="bike_service.html">Bike Service</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Weather Service</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#app.services.weather_service.WeatherService"><code class="docutils literal notranslate"><span class="pre">WeatherService</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="weather_service.html">Weather Service</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Prediction Service</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#app.services.prediction_service.PredictionService"><code class="docutils literal notranslate"><span class="pre">PredictionService</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="prediction_service.html">Prediction Service</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="Models.html">Models</a></li>
@@ -81,9 +81,9 @@
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="App.html">App</a></li>
           <li class="breadcrumb-item"><a href="Services.html">Service</a></li>
-      <li class="breadcrumb-item active">Weather Service</li>
+      <li class="breadcrumb-item active">Prediction Service</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="_sources/weather_service.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/prediction_service.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -91,29 +91,34 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="module-app.services.weather_service">
-<span id="weather-service"></span><h1>Weather Service<a class="headerlink" href="#module-app.services.weather_service" title="Link to this heading"></a></h1>
-<p>weather_service.py</p>
-<p>Provides functionality to fetch and format hourly weather data from OpenWeatherMap.</p>
+  <section id="module-app.services.prediction_service">
+<span id="prediction-service"></span><h1>Prediction Service<a class="headerlink" href="#module-app.services.prediction_service" title="Link to this heading"></a></h1>
+<p>prediction_service.py</p>
+<p>Provides prediction functionality for bike availability using weather and station data.</p>
 <dl class="py class">
-<dt class="sig sig-object py" id="app.services.weather_service.WeatherService">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">app.services.weather_service.</span></span><span class="sig-name descname"><span class="pre">WeatherService</span></span><a class="headerlink" href="#app.services.weather_service.WeatherService" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="app.services.prediction_service.PredictionService">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">app.services.prediction_service.</span></span><span class="sig-name descname"><span class="pre">PredictionService</span></span><a class="headerlink" href="#app.services.prediction_service.PredictionService" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<p>Service class for retrieving and formatting weather data from OpenWeatherMap.</p>
+<p>Service class for predicting bike availability at a given station.</p>
 <dl class="py method">
-<dt class="sig sig-object py" id="app.services.weather_service.WeatherService.getWeatherData">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">getWeatherData</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.services.weather_service.WeatherService.getWeatherData" title="Link to this definition"></a></dt>
-<dd><p>Fetches 24-hour weather forecast data and organizes it by date.</p>
+<dt class="sig sig-object py" id="app.services.prediction_service.PredictionService.predict_bike_availability">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">predict_bike_availability</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.services.prediction_service.PredictionService.predict_bike_availability" title="Link to this definition"></a></dt>
+<dd><p>Predicts the number of available bikes at a station based on current weather
+and station information.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p><dl class="simple">
-<dt>A dictionary containing formatted weather data, current icon, and temperature,</dt><dd><p>or None if an error occurs during fetch.</p>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>data</strong> (<em>dict</em>) – Dictionary containing:
+- number (int): Station number
+- bike_stands (int): Number of docks available
+- lat (float): Latitude of the station
+- lon (float): Longitude of the station
+- capacity (int): Total capacity of the station</p>
 </dd>
-</dl>
-</p>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Predicted number of available bikes.</p>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p>dict or None</p>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
 </dd>
 </dl>
 </dd></dl>
@@ -126,8 +131,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="bike_service.html" class="btn btn-neutral float-left" title="Bike Service" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="prediction_service.html" class="btn btn-neutral float-right" title="Prediction Service" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="weather_service.html" class="btn btn-neutral float-left" title="Weather Service" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Models.html" class="btn btn-neutral float-right" title="Models" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

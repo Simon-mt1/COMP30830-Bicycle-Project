@@ -1,0 +1,7 @@
+Prediction Service
+=============================
+
+.. automodule:: app.services.prediction_service
+   :members:
+   :undoc-members:
+   :show-inheritance:

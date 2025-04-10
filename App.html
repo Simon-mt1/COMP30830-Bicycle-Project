@@ -93,9 +93,13 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="data_controller.html">Data controller</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="data_controller.html#app.controllers.data_controller.faq"><code class="docutils literal notranslate"><span class="pre">faq()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_controller.html#app.controllers.data_controller.index"><code class="docutils literal notranslate"><span class="pre">index()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_controller.html#app.controllers.data_controller.home"><code class="docutils literal notranslate"><span class="pre">home()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="data_controller.html#app.controllers.data_controller.map"><code class="docutils literal notranslate"><span class="pre">map()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="data_controller.html#app.controllers.data_controller.start"><code class="docutils literal notranslate"><span class="pre">start()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="prediction_controller.html">Prediction controller</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="prediction_controller.html#app.controllers.prediction_controller.predict"><code class="docutils literal notranslate"><span class="pre">predict()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -123,21 +127,28 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="prediction_service.html">Prediction Service</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="prediction_service.html#app.services.prediction_service.PredictionService"><code class="docutils literal notranslate"><span class="pre">PredictionService</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="prediction_service.html#app.services.prediction_service.PredictionService.predict_bike_availability"><code class="docutils literal notranslate"><span class="pre">PredictionService.predict_bike_availability()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Models.html">Models</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="user.html">User</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="user.html#app.models.user.id"><code class="docutils literal notranslate"><span class="pre">id</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="user.html#app.models.user.firstname"><code class="docutils literal notranslate"><span class="pre">firstname</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="user.html#app.models.user.lastname"><code class="docutils literal notranslate"><span class="pre">lastname</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="user.html#app.models.user.email"><code class="docutils literal notranslate"><span class="pre">email</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="user.html#app.models.user.password"><code class="docutils literal notranslate"><span class="pre">password</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="user.html#app.models.user.User"><code class="docutils literal notranslate"><span class="pre">User</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="user.html#app.models.user.User.email"><code class="docutils literal notranslate"><span class="pre">User.email</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="user.html#app.models.user.User.firstname"><code class="docutils literal notranslate"><span class="pre">User.firstname</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="user.html#app.models.user.User.id"><code class="docutils literal notranslate"><span class="pre">User.id</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="user.html#app.models.user.User.lastname"><code class="docutils literal notranslate"><span class="pre">User.lastname</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="user.html#app.models.user.User.password"><code class="docutils literal notranslate"><span class="pre">User.password</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="user.html#app.entities.user.id"><code class="docutils literal notranslate"><span class="pre">id</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="user.html#app.entities.user.firstname"><code class="docutils literal notranslate"><span class="pre">firstname</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="user.html#app.entities.user.lastname"><code class="docutils literal notranslate"><span class="pre">lastname</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="user.html#app.entities.user.email"><code class="docutils literal notranslate"><span class="pre">email</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="user.html#app.entities.user.password"><code class="docutils literal notranslate"><span class="pre">password</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="user.html#app.entities.user.User"><code class="docutils literal notranslate"><span class="pre">User</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="user.html#app.entities.user.User.email"><code class="docutils literal notranslate"><span class="pre">User.email</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="user.html#app.entities.user.User.firstname"><code class="docutils literal notranslate"><span class="pre">User.firstname</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="user.html#app.entities.user.User.id"><code class="docutils literal notranslate"><span class="pre">User.id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="user.html#app.entities.user.User.lastname"><code class="docutils literal notranslate"><span class="pre">User.lastname</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="user.html#app.entities.user.User.password"><code class="docutils literal notranslate"><span class="pre">User.password</span></code></a></li>
 </ul>
 </li>
 </ul>

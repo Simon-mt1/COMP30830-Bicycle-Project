@@ -19,7 +19,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Service" href="Services.html" />
+    <link rel="next" title="Prediction controller" href="prediction_controller.html" />
     <link rel="prev" title="Auth Controller" href="auth_controller.html" /> 
 </head>
 
@@ -52,11 +52,12 @@
 <li class="toctree-l3"><a class="reference internal" href="auth_controller.html">Auth Controller</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Data controller</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#app.controllers.data_controller.faq"><code class="docutils literal notranslate"><span class="pre">faq()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#app.controllers.data_controller.index"><code class="docutils literal notranslate"><span class="pre">index()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#app.controllers.data_controller.home"><code class="docutils literal notranslate"><span class="pre">home()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#app.controllers.data_controller.map"><code class="docutils literal notranslate"><span class="pre">map()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#app.controllers.data_controller.start"><code class="docutils literal notranslate"><span class="pre">start()</span></code></a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="prediction_controller.html">Prediction controller</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="Services.html">Service</a></li>
@@ -99,7 +100,7 @@
 <p><strong>Routes:</strong></p>
 <ul class="simple">
 <li><p>/map: Displays the Google Map with bike stations and weather info.</p></li>
-<li><p>/index: Dashboard/homepage after user login.</p></li>
+<li><p>/home: Dashboard/homepage after user login.</p></li>
 <li><p>/: Redirects to the login page.</p></li>
 <li><p>/faq: Displays the FAQ page.</p></li>
 </ul>
@@ -118,8 +119,8 @@
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="app.controllers.data_controller.index">
-<span class="sig-prename descclassname"><span class="pre">app.controllers.data_controller.</span></span><span class="sig-name descname"><span class="pre">index</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.controllers.data_controller.index" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="app.controllers.data_controller.home">
+<span class="sig-prename descclassname"><span class="pre">app.controllers.data_controller.</span></span><span class="sig-name descname"><span class="pre">home</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.controllers.data_controller.home" title="Link to this definition"></a></dt>
 <dd><p>Route to render the main dashboard page.</p>
 <p>Only accessible if the user is logged in.</p>
 <dl class="field-list simple">
@@ -169,7 +170,7 @@ data, formats them, and renders the map page. Redirects to login if user not in 
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="auth_controller.html" class="btn btn-neutral float-left" title="Auth Controller" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="Services.html" class="btn btn-neutral float-right" title="Service" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="prediction_controller.html" class="btn btn-neutral float-right" title="Prediction controller" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

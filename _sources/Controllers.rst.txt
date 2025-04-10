@@ -6,3 +6,4 @@ Controllers
 
    auth_controller
    data_controller
+   prediction_controller
