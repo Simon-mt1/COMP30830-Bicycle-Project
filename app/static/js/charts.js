@@ -1,76 +1,39 @@
-const temperatureCanvas = document.getElementById("temp");
-const windspeedCanvas = document.getElementById("windspeed");
-const lol = document.getElementById("new");
+const predictionChart = document.querySelector(".prediction-chart");
+let chart = null;
 
-const temp = [];
-const windSpeed = [];
-const time = [];
+const drawCharts = (prediction) => {
+  const keys = Object.keys(prediction);
+  const values = Object.values(prediction).map((item) => Math.floor(item));
 
-for (let data of weatherData["hourly"]) {
-  temp.push(data["temp"]);
-  windSpeed.push(data["wind_speed"]);
-  time.push(data["dt"]);
-}
+  const max = Math.max(...values);
+  const min = Math.min(...values);
 
-new Chart(temperatureCanvas, {
-  type: "line",
-  data: {
-    labels: time,
-    datasets: [
-      {
-        label: "Temperature",
-        data: temp,
-        borderWidth: 1,
-      },
-    ],
-  },
-  options: {
-    scales: {
-      y: {
-        beginAtZero: true,
+  if (chart !== null) {
+    chart.destroy();
+  }
+
+  chart = new Chart(predictionChart, {
+    type: "line",
+    data: {
+      labels: keys,
+      datasets: [
+        {
+          label: "Available bikes",
+          data: values,
+        },
+      ],
+    },
+    options: {
+      scales: {
+        y: {
+          ticks: {
+            stepSize: 1,
+          },
+          min: min - 3,
+          max: max + 3,
+          beginAtZero: true,
+        },
       },
     },
-  },
-});
-
-new Chart(windspeedCanvas, {
-  type: "line",
-  data: {
-    labels: time,
-    datasets: [
-      {
-        label: "Wind speed",
-        data: windSpeed,
-        borderWidth: 1,
-      },
-    ],
-  },
-  options: {
-    scales: {
-      y: {
-        beginAtZero: true,
-      },
-    },
-  },
-});
-
-new Chart(lol, {
-  type: "line",
-  data: {
-    labels: time,
-    datasets: [
-      {
-        label: "Wind speed",
-        data: windSpeed,
-        borderWidth: 1,
-      },
-    ],
-  },
-  options: {
-    scales: {
-      y: {
-        beginAtZero: true,
-      },
-    },
-  },
-});
+  });
+};

@@ -72,8 +72,7 @@
             <button class="direction-button">Directions</button>
             <div class="direction-panel"></div>
             <div class="prediction-result">
-                <h4>Possible trends</h4>
-                <p id="prediction-text">Loading...</p> <!-- Placeholder text until prediction is available -->
+                <canvas class="prediction-chart" width="600px" height="500px"></canvas>
             </div>
         </div>
         <!-- Prediction Result Below Directions Button -->
@@ -129,6 +128,8 @@
         const weatherData = JSON.parse('{{ weatherData | tojson | safe }}');
         const googleapis = JSON.parse('{{ googleMapApiKey | tojson | safe }}');
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{{ url_for('static', filename='js/charts.js') }}"></script>
     <script src='{{ url_for('static', filename='js/map.js') }}'></script>
     <script src="{{ url_for('static', filename='js/fetchPlace.js') }}"></script>
     <script src="{{ url_for('static', filename='js/fetchLocation.js') }}"></script>

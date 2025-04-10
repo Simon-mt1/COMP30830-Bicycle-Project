@@ -1,6 +1,7 @@
 // Script to
 
 let value = "available_bikes";
+let rendered = false;
 
 const dublin = { lat: 53.349805, lng: -6.26031 };
 const sidebar = document.querySelector(".sidebar");
@@ -37,7 +38,6 @@ const handleMapButtonClick = (event) => {
 
 async function initMap() {
   // Center the map on Dublin
-  let rendered = false;
   let clickedLocation = null;
 
   let directionsService;
@@ -143,9 +143,9 @@ async function initMap() {
         data["bike_stands"] +
         " bikes available";
 
-      // place = await fetchPlaces(data["address"]);
-      // sidebarImage.src = "";
-      // sidebarImage.alt = "";
+      place = await fetchPlaces(data["address"]);
+      sidebarImage.src = "";
+      sidebarImage.alt = "";
 
       const stationData = {
         number: data.number,
@@ -154,12 +154,7 @@ async function initMap() {
         lon: marker.getPosition().lng(),
         capacity: data.bike_stands,
       };
-      /*year: new Date().getFullYear(),
-        month: new Date().getMonth() + 1,
-        day: new Date().getDate(),
-        hour: new Date().getHours(),
-        minute: new Date().getMinutes(),
-        weekday: new Date().getDay(),*/
+
       try {
         const response = await fetch("/predict", {
           method: "POST",
@@ -171,21 +166,7 @@ async function initMap() {
 
         const data = await response.json();
 
-        // Update the prediction in the sidebar
-        const predictionElement = document.getElementById("prediction-text");
-        predictionElement.innerHTML = `Prediction: ${Math.floor(
-          +data.prediction
-        )}`;
-
-        /// Update other UI elements if necessary
-        /*const sidebarheading = document.querySelector(".heading");
-        const bikesNumber = document.querySelector(".bikes-number");
-        sidebarheading.innerText = marker.title; // Or any other relevant info
-        bikesNumber.innerText = `${marker.num_docks_available} bikes available`;
-      
-        // Open sidebar or modal if needed
-        const sidebar = document.querySelector('.sidebar');
-        sidebar.classList.add('open');*/
+        drawCharts(data.prediction);
       } catch (error) {
         console.log(`Error: ${error}`);
       }
@@ -214,9 +195,9 @@ async function initMap() {
         item.classList.toggle("display");
       });
 
-      backbutton.classList.toggle("display");
+      backbutton.classList.remove("display");
+      closeButton.disabled = false;
       document.querySelector(".map-button-box").classList.add("hide");
-      closeButton.innerText = ">";
       directionButton.style.cursor = "not-allowed";
       directionButton.disabled = !directionButton.disabled;
 
@@ -260,10 +241,11 @@ async function initMap() {
       mapbuttons.forEach((item) => {
         item.classList.toggle("display");
       });
-      backbutton.classList.toggle("display");
+      backbutton.classList.add("display");
 
       closeButton.disabled = true;
       closeButton.style.cursor = "not-allowed";
+      closeButton.innerText = "";
 
       directionButton.style.cursor = "pointer";
       directionButton.disabled = !directionButton.disabled;

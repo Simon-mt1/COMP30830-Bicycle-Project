@@ -25,4 +25,4 @@ def predict():
     """
     data = request.get_json()
     prediction = PredictionService.predict_bike_availability(data)
-    return jsonify({'prediction': prediction[0]})
+    return jsonify({'prediction': prediction})
