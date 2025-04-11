@@ -2,6 +2,10 @@
 
 let value = "available_bikes";
 let rendered = false;
+let directionsService;
+let directionsRenderer;
+let map;
+let clickedLocation = null;
 
 const dublin = { lat: 53.349805, lng: -6.26031 };
 const sidebar = document.querySelector(".sidebar");
@@ -37,13 +41,6 @@ const handleMapButtonClick = (event) => {
 };
 
 async function initMap() {
-  // Center the map on Dublin
-  let clickedLocation = null;
-
-  let directionsService;
-  let directionsRenderer;
-  let map;
-
   sidebar.classList.remove("open");
 
   if (!directionsService) {
@@ -166,7 +163,8 @@ async function initMap() {
 
         const data = await response.json();
 
-        drawCharts(data.prediction);
+        drawAvailableBikesCharts(data.prediction.availableBikes);
+        drawAvailableSpacesCharts(data.prediction.availableSpaces);
       } catch (error) {
         console.log(`Error: ${error}`);
       }

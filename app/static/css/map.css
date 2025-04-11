@@ -362,6 +362,7 @@ td {
   line-height: 25px;
   font-size: 13px;
   font-weight: 500;
+  border-bottom: 2px solid rgb(239, 233, 233);
 }
 
 .prediction-result {
@@ -373,3 +374,10 @@ td {
   background-color: grey;
   cursor: pointer;
 }
+
+.available-bikes-chart,
+.available-spaces-chart {
+  margin: 20px 0px;
+}
+
+

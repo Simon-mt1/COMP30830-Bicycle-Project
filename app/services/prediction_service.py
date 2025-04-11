@@ -9,6 +9,7 @@ import pandas as pd
 from app.services.weather_service import WeatherService
 import os
 from datetime import datetime
+import math
 
 try:
     # Load the pre-trained prediction model
@@ -52,8 +53,9 @@ class PredictionService:
         first_day_key = next(iter(full_weather_data["weather_data"]))
         hourly_data = full_weather_data["weather_data"][first_day_key]
 
-        prediction_dict = {}
-        
+        availableBikes = {}
+        availableSpaces = {}
+
         for i in range(1,len(hourly_data)):
             pred_hour = hourly_data[i]
 
@@ -71,7 +73,9 @@ class PredictionService:
                                     ,'max_relative_humidity_percent':weather_features['max_relative_humidity_percent'],'Weekday': day_of_week}])
         
             prediction = model.predict(input_data)
-            busy_flag = float(prediction)
-            prediction_dict[future_hour]= busy_flag
+            busy_flag = data['capacity'] - math.floor(float(prediction))
+            availableBikes[future_hour] = math.floor(float(prediction))
+            availableSpaces[future_hour] = busy_flag
 
-        return prediction_dict
+        
+        return {"availableBikes" : availableBikes, "availableSpaces" : availableSpaces}
