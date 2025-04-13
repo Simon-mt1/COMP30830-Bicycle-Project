@@ -4,7 +4,7 @@ prediction_service.py
 Provides prediction functionality for bike availability using weather and station data.
 """
 
-import pickle
+import joblib
 import pandas as pd
 from app.services.weather_service import WeatherService
 import os
@@ -13,8 +13,8 @@ import math
 
 try:
     # Load the pre-trained prediction model
-    with open(os.path.join("app", "models", "bike_availability_model.pkl"), "rb") as file:
-        model = pickle.load(file)
+    with open(os.path.join("app", "models", "bike_availability_model_rf.joblib"), "rb") as file:
+        model = joblib.load(file)
 except FileNotFoundError:
     print("File not found")
     
@@ -66,9 +66,7 @@ class PredictionService:
             
             future_hour = hour+i
 
-            input_data = pd.DataFrame([{'station_id': data['number'], 'num_docks_available': data['bike_stands']
-                                    , 'lat':data['lat'], 'lon':data['lon'], 'capacity':data['capacity'],'stno':data['number']
-                                    ,'year':year,'month':month,'day':day, 'hour':future_hour,
+            input_data = pd.DataFrame([{'station_id': data['number'],'day':day, 'hour':future_hour,
                                     'minute':minute, 'max_air_temperature_celsius':weather_features['max_air_temperature_celsius']
                                     ,'max_relative_humidity_percent':weather_features['max_relative_humidity_percent'],'Weekday': day_of_week}])
         
