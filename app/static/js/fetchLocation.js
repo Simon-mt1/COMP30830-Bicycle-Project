@@ -1,3 +1,22 @@
+/**
+ * @module fetchLocation.js
+ * This module provides functions for retrieving the user's current location and navigating
+ * to the nearest available station on a map using the Google Maps API.
+ *
+ * It assumes `mapData` is an array of station objects, and each station has a `position` (with `lat` and `lng`)
+ * and a `value` key that represents availability (e.g., bikes or spaces).
+ *
+ * @requires Google Maps JavaScript API
+ */
+
+/**
+ * Gets the current geolocation of the user using the browser's `navigator.geolocation` API.
+ *
+ * @async
+ * @function getCurrentLocation
+ * @returns {Promise<{lat: number, lng: number}>} A promise that resolves with an object containing `lat` and `lng`.
+ * @throws Will reject the promise if geolocation fails or is not supported.
+ */
 async function getCurrentLocation() {
   return new Promise((resolve, reject) => {
     if (navigator.geolocation) {
@@ -18,6 +37,13 @@ async function getCurrentLocation() {
   });
 }
 
+/**
+ * Wraps the `getCurrentLocation` function with error handling.
+ *
+ * @async
+ * @function retrieveLocation
+ * @returns {Promise<{lat: number, lng: number}|undefined>} The user's location or undefined if an error occurs.
+ */
 async function retrieveLocation() {
   try {
     const location = await getCurrentLocation();
@@ -27,6 +53,15 @@ async function retrieveLocation() {
   }
 }
 
+/**
+ * Finds and navigates to the nearest available station using the provided markers array.
+ * Triggers the click event on the nearest marker to leverage existing click handler logic.
+ *
+ * @async
+ * @function goToNearestStation
+ * @param {google.maps.Marker[]} markers - An array of Google Maps Marker objects corresponding to each station.
+ * @returns {void}
+ */
 async function goToNearestStation(markers) {
   const location = await retrieveLocation();
 
@@ -42,9 +77,10 @@ async function goToNearestStation(markers) {
     const station = mapData[i];
     const stationPos = station["position"];
 
-    // Skip stations with 0 of selected value
+    // Skip stations with 0 available bikes or spaces (depending on the selected value)
     if (station[value] === 0) continue;
 
+    // Calculate straight-line distance (Pythagorean)
     const distance = Math.sqrt(
       Math.pow(location.lat - stationPos.lat, 2) +
         Math.pow(location.lng - stationPos.lng, 2)
@@ -61,6 +97,6 @@ async function goToNearestStation(markers) {
     return;
   }
 
-  // Trigger the nearest marker's click event to reuse logic
+  // Simulate a click on the nearest station's marker
   google.maps.event.trigger(markers[nearest.index], "click");
 }
