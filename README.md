@@ -110,7 +110,7 @@ To run **Dublin Bikes**, follow these steps:
 Run tests using the following command:
 
 ```bash
-npm test  # or pytest, etc.
+pytest Testing -v
 ```
 
 ## 🤝 Contributing
