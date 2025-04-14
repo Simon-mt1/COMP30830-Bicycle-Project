@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Map</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/map.css') }}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!-- Google Maps API -->
+    </head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="{{ url_for("data.home")}}">
+                
+                    <img
+                      src="{{ url_for('static', filename='images/logo.png') }}"
+                      alt="Dublin Bikes Logo"
+                    />
+                
+            </a>
+          </div>
+          <div class="temperature">
+              <p>{{weatherData["currentTemp"]}}°C</p>
+              <div class="nav-image-container" onclick="handleWeatherIconClick()">
+                  <img src="{{weatherData["currentIcon"]}}" alt="">
+              </div>
+          </div>
+          <div class="navbar-links">
+            <a href="{{ url_for("data.home") }}">HOME</a>
+            <a href="{{ url_for("data.map") }}">MAP</a>
+            <a href="{{ url_for("data.faq") }}">FAQ</a>
+            <a href="{{ url_for("auth.logout") }}">LOGOUT</a>
+          </div>
+    </nav>
+
+    <!-- Button Container -->
+    <div class="map-button-container">
+        <div class="map-button-box">
+            <button class="map-button toggle-button" disabled onclick="handleMapButtonClick(event)">Available Bikes</button>
+            <button class="map-button toggle-button disabled" onclick="handleMapButtonClick(event)">Available Spaces</button>
+            <button class="map-button disabled" onclick="handleMapButtonClick(event)">Nearest Station</button>
+        </div>
+        <button class="back-button display">Exit directions</button>
+    </div>
+    
+    <!-- Map Container -->
+    <div id="map"></div>
+    
+    <div class="sidebar">
+        <div class="sidebar-container">
+            <div class="sidebar-image"></div>
+            <div class="sidebar-head">
+                <h3 class="heading"></h3>
+            </div>
+    
+            <table class="sidebar-content">
+                <tr class="address">
+                    <td><img src="{{ url_for('static', filename='images/location.png') }}" alt="Location Icon" class="location-icon"></td>
+                    <td class="address-text">Address</td>
+                </tr>
+                <tr class="bike">
+                    <td><img src="{{ url_for('static', filename='images/bike.png') }}" alt="Bike image" class="bike-image"></td>
+                    <td class="bikes-number address-text"></td>
+                </tr>
+            </table>
+    
+            <button class="direction-button">Directions</button>
+            <div class="direction-panel"></div>
+            <div class="prediction-result">
+                <canvas class="available-bikes-chart" width="600px" height="500px"></canvas>
+                <hr>
+                <canvas class="available-spaces-chart" width="600px" height="500px"></canvas>
+            </div>
+        </div>
+        
+        <button class="close-button" disabled></button>
+    </div>
+
+
+    <div class="modal transform">
+        <div class="weather-title">24 Hour Forecast</div>
+        <div class="table-container">
+            {% for dates in weatherData["weather_data"] %}
+                <p class="weather-date">{{ dates }}</p>
+                <table class="weather-table">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Weather</th>
+                            <th>Temp</th>
+                            <th>Wind m/s</th>
+                            <th>Precipitation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for data in weatherData["weather_data"][dates] %}
+                            <tr>
+                                <td>{{data["dt"]}}</td>
+                                <td><img src="{{data["icon"]}}" alt="data" loading="lazy"></td>
+                                <td>{{data["temp"]}}</td>
+                                <td>{{data["wind_speed"]}}</td>
+                                <td>
+                                    {% if data["rain"] %}
+                                        {{data["rain"]}}
+                                    {% endif %}
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            {% endfor %}
+        </div>
+        <div class="x-mark">
+            <div></div>
+            <div></div>
+        </div>        
+    </div>
+    <div class="overlay transform"></div>
+
+    <script>
+        const mapData = JSON.parse('{{ jcdecauxData | tojson | safe }}');
+        const weatherData = JSON.parse('{{ weatherData | tojson | safe }}');
+        const googleapis = JSON.parse('{{ googleMapApiKey | tojson | safe }}');
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{{ url_for('static', filename='js/charts.js') }}"></script>
+    <script src='{{ url_for('static', filename='js/map.js') }}'></script>
+    <script src="{{ url_for('static', filename='js/fetchPlace.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/fetchLocation.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/weather.js') }}"></script>
+    <script src={{"https://maps.googleapis.com/maps/api/js?" + "key=" + googleMapApiKey + "&callback=initMap"}}></script>
+    
+</body>
+</html>

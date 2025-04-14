@@ -1,0 +1,96 @@
+.login-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.forgot-password {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.forgot-text {
+  color: #555; /* Grey color for "Forgot password?" */
+}
+
+.reset-text {
+  color: #245b95; /* Blue color for "Reset it here" */
+}
+
+.forgot-password:hover .reset-text {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.invalid {
+  color: red;
+  font-size: 12px;
+}
+
+.inactive {
+  display: none;
+}
+
+.mail-sent {
+  color: green;
+  font-size: 12px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #245b95;
+  border: none;
+  border-radius: 18px;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #245b95;
+}
+
+.register-link {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #555;
+}
+
+.register-link a {
+  color: #245b95;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}

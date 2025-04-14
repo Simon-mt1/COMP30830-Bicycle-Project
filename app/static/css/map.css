@@ -1,0 +1,383 @@
+/* Map Container */
+#map {
+  position: absolute;
+  margin-top: 0px;
+  z-index: 0;
+  margin-bottom: 0px;
+  inset: 70px 0 0 0;
+}
+
+/* Button Container */
+.map-button-container {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 65px;
+}
+
+/* Map Buttons */
+.map-button {
+  padding: 10px 20px;
+  background-color: #245b95;
+  border: none;
+  border-radius: 18px;
+  color: #fff;
+  font-size: 14px;
+  cursor: not-allowed;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button {
+  padding: 10px 20px;
+  background-color: #245b95;
+  border: none;
+  border-radius: 18px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.map-button:hover {
+  background-color: #1a446e;
+}
+
+.display {
+  display: none;
+}
+
+.sidebar {
+  width: 25%;
+  height: 100%;
+  background-color: white;
+  position: relative;
+  align-self: flex-start;
+  transform: translateX(-100%);
+  transition: 300ms transform ease-in;
+}
+
+.sidebar-container {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.close-button {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  color: white;
+  top: 100px;
+  right: -40px;
+  border: none;
+  background-color: #245b95;
+  font-weight: bold;
+  z-index: 100;
+  font-size: 20px;
+  cursor: not-allowed;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.sidebar-head {
+  margin-top: 20px;
+  position: relative;
+}
+
+.open {
+  transform: translateX(0);
+}
+
+.close-button-disabled {
+  cursor: not-allowed;
+}
+
+.close-button:hover {
+  border: 2px solid #0056b3;
+  background-color: rgb(255, 255, 255);
+  color: #0056b3;
+}
+
+.heading {
+  margin: 0px;
+  height: 21px;
+  text-align: center;
+}
+
+.bike-image {
+  width: 40px;
+  margin-left: 5px;
+}
+
+.sidebar-content {
+  margin-top: 30px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blocks {
+  margin: 20px;
+  background-color: #e4e1e1f4;
+  padding: 100px;
+  text-align: center;
+  font-weight: bold;
+  min-width: 100px;
+  text-decoration: none;
+  color: black;
+}
+
+.blocks:hover {
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.temperature {
+  /* margin-left: 250px; */
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  /* z-index: 2; */
+  left: 48.8%;
+  transform: translateX(-50%);
+}
+
+.temperature p {
+  color: black;
+  font-weight: bold;
+  position: left;
+}
+
+.sidebar-image {
+  width: 100%;
+  height: 300px;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.direction-button {
+  display: block;
+  padding: 10px 15px;
+  background-color: #245b95;
+  color: white;
+  border-radius: 20px;
+  margin: 0 auto;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.direction-button:hover {
+  color: #0088b9;
+  border: 2px solid #0088b9;
+  background-color: white;
+}
+
+.places-dropdown {
+  position: fixed;
+  top: 15%;
+  left: 100px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.modal {
+  position: fixed;
+  z-index: 300;
+  background-color: white;
+  inset: 10% 20% 10% 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.modal .close-button {
+  position: absolute;
+  right: 40px;
+  top: 20px;
+}
+
+.table-container {
+  overflow: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  margin: 0px 0px 0px;
+  width: 100%;
+}
+
+.modal table {
+  overflow-y: scroll;
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  font-weight: 500;
+}
+
+.modal tr {
+  border-bottom: 3px solid rgb(236, 232, 232);
+}
+
+.modal th {
+  padding: 20px;
+  font-weight: 800;
+}
+
+.modal td img {
+  background-color: #0056b3;
+  border-radius: 100%;
+}
+
+.weather-date {
+  font-size: 20px;
+  margin: 40px 0px 20px 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.x-mark {
+  position: absolute;
+  right: 60px;
+  top: 40px;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.x-mark div {
+  width: 30px;
+  height: 5px;
+  background-color: black;
+  overflow: hidden;
+}
+
+.x-mark:hover > div {
+  background-color: red;
+}
+
+.overlay {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(2px);
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 100;
+  visibility: 100;
+  transition: opacity 2ms ease-in, visibility 2ms ease-in;
+  z-index: 250;
+  cursor: pointer;
+}
+
+.transform {
+  opacity: 0;
+  visibility: 0;
+  transform: scale(0);
+}
+
+.x-mark div:nth-child(1) {
+  transform: translateY(140%) rotate(45deg);
+}
+
+.x-mark div:nth-child(2) {
+  transform: translateY(75%) rotate(-45deg);
+}
+
+.map-button-box {
+  background-color: #f4f4f4;
+  border-radius: 0px;
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.hide {
+  display: none !important;
+}
+
+.address {
+  border-bottom: 1px solid #dadce0; /* Google-style light divider */
+}
+
+.address td {
+  padding: 15px 20px;
+  margin: 20px 25px;
+}
+
+.address-row {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between icon and text */
+  width: 100%;
+}
+
+.address-text {
+  font-size: 13px;
+  color: #3d3f42;
+  font-weight: 590;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  word-break: break-word;
+  flex: 1;
+}
+
+.location-icon {
+  width: 20px;
+}
+
+.weather-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  color: #245b95;
+}
+
+.direction-panel {
+  margin-top: 15px;
+  padding: 15px 20px;
+  line-height: 25px;
+  font-size: 13px;
+  font-weight: 500;
+  border-bottom: 2px solid rgb(239, 233, 233);
+}
+
+.prediction-result {
+  margin: 10px 0px 100px;
+  padding: 15px 20px;
+}
+
+.disabled {
+  background-color: grey;
+  cursor: pointer;
+}
+
+.available-bikes-chart,
+.available-spaces-chart {
+  margin: 20px 0px;
+}
+
+
