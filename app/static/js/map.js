@@ -1,7 +1,13 @@
-// Script to
+/**
+ * Main script for rendering a customized Google Map for Dublin Bikes.
+ * Supports toggling between available bikes/spaces, fetching directions,
+ * and displaying station info with predictions and images.
+ *
+ * @module map.js
+ */
 
-let value = "available_bikes";
-let rendered = false;
+let value = "available_bikes"; // Current data value being rendered on the map
+let rendered = false; // Flag to prevent re-attaching listeners
 let directionsService;
 let directionsRenderer;
 let map;
@@ -20,6 +26,11 @@ const directionPanel = document.querySelector(".direction-panel");
 
 let markers = [];
 
+/**
+ * Handles toggle buttons for switching between bikes/spaces view or navigating to the nearest station.
+ * @function
+ * @param {MouseEvent} event - The click event from the toggle buttons.
+ */
 const handleMapButtonClick = (event) => {
   if (event.target.innerHTML === "Available Bikes") {
     value = "available_bikes";
@@ -40,6 +51,12 @@ const handleMapButtonClick = (event) => {
   initMap();
 };
 
+/**
+ * Initializes and renders the map with markers, styles, and click behavior.
+ * Sets up direction services and handles sidebar display and predictions.
+ * @async
+ * @function initMap
+ */
 async function initMap() {
   sidebar.classList.remove("open");
 
@@ -49,57 +66,54 @@ async function initMap() {
   if (!directionsRenderer) {
     directionsRenderer = new google.maps.DirectionsRenderer();
   } else {
-    // Reset existing renderer
     directionsRenderer.setMap(null);
     directionsRenderer.setDirections({ routes: [] });
   }
 
-  // Custom map styles to hide all labels except road names
   const mapStyles = [
     {
       featureType: "all",
       elementType: "labels",
-      stylers: [{ visibility: "off" }], // Turn off all labels
+      stylers: [{ visibility: "off" }],
     },
     {
       featureType: "road",
       elementType: "labels",
-      stylers: [{ visibility: "on" }], // Turn on road labels
+      stylers: [{ visibility: "on" }],
     },
     {
       featureType: "water",
       elementType: "geometry",
-      stylers: [{ color: "#a2daf2" }], // Light blue for water
+      stylers: [{ color: "#a2daf2" }],
     },
     {
       featureType: "landscape",
       elementType: "geometry",
-      stylers: [{ color: "#f5f5f5" }], // Light gray for land
+      stylers: [{ color: "#f5f5f5" }],
     },
     {
       featureType: "road",
       elementType: "geometry",
-      stylers: [{ color: "#ffffff" }], // White for roads
+      stylers: [{ color: "#ffffff" }],
     },
     {
-      featureType: "poi", // Points of interest (e.g., parks, schools)
+      featureType: "poi",
       elementType: "geometry",
-      stylers: [{ color: "#e0f2e9" }], // Light green for parks
+      stylers: [{ color: "#e0f2e9" }],
     },
     {
-      featureType: "transit", // Public transit (e.g., train stations)
+      featureType: "transit",
       elementType: "geometry",
-      stylers: [{ color: "#d3d3d3" }], // Light gray for transit
+      stylers: [{ color: "#d3d3d3" }],
     },
   ];
 
-  // Create the map with custom styles
   map = new google.maps.Map(document.getElementById("map"), {
     zoom: 15,
     center: dublin,
     styles: mapStyles,
-    mapTypeControl: false, // Removes the map type control
-    streetViewControl: false, // Removes the street view control
+    mapTypeControl: false,
+    streetViewControl: false,
   });
 
   const currentLocation = await retrieveLocation();
@@ -134,11 +148,7 @@ async function initMap() {
 
       map.panTo(marker.getPosition());
       sidebarheading.innerText = data["address"];
-      bikesNumber.innerText =
-        data["available_bikes"] +
-        " / " +
-        data["bike_stands"] +
-        " bikes available";
+      bikesNumber.innerText = `${data["available_bikes"]} / ${data["bike_stands"]} bikes available`;
 
       place = await fetchPlaces(data["address"]);
       sidebarImage.src = "";
@@ -162,7 +172,6 @@ async function initMap() {
         });
 
         const data = await response.json();
-
         drawAvailableBikesCharts(data.prediction.availableBikes);
         drawAvailableSpacesCharts(data.prediction.availableSpaces);
       } catch (error) {
@@ -173,6 +182,7 @@ async function initMap() {
         sidebar.classList.add("open");
         map.setZoom(16);
       }, 300);
+
       clickedLocation = {
         lat: data["position"]["lat"],
         lng: data["position"]["lng"],
@@ -189,9 +199,7 @@ async function initMap() {
       }
       markers = [];
 
-      mapbuttons.forEach((item) => {
-        item.classList.toggle("display");
-      });
+      mapbuttons.forEach((item) => item.classList.toggle("display"));
 
       backbutton.classList.remove("display");
       closeButton.disabled = false;
@@ -199,7 +207,7 @@ async function initMap() {
       directionButton.style.cursor = "not-allowed";
       directionButton.disabled = !directionButton.disabled;
 
-      var request = {
+      const request = {
         origin: currentLocation,
         destination: clickedLocation,
         travelMode: google.maps.TravelMode.DRIVING,
@@ -228,17 +236,11 @@ async function initMap() {
 
     closeButton.addEventListener("click", () => {
       sidebar.classList.toggle("open");
-      if (closeButton.innerText == "<") {
-        closeButton.innerText = ">";
-      } else {
-        closeButton.innerText = "<";
-      }
+      closeButton.innerText = closeButton.innerText === "<" ? ">" : "<";
     });
 
     backbutton.addEventListener("click", () => {
-      mapbuttons.forEach((item) => {
-        item.classList.toggle("display");
-      });
+      mapbuttons.forEach((item) => item.classList.toggle("display"));
       backbutton.classList.add("display");
 
       closeButton.disabled = true;
