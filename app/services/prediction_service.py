@@ -67,7 +67,7 @@ class PredictionService:
             future_hour = hour+i
 
             input_data = pd.DataFrame([{'station_id': data['number'],'day':day, 'hour':future_hour,
-                                    'minute':minute, 'max_air_temperature_celsius':weather_features['max_air_temperature_celsius']
+                                    'max_air_temperature_celsius':weather_features['max_air_temperature_celsius']
                                     ,'max_relative_humidity_percent':weather_features['max_relative_humidity_percent'],'Weekday': day_of_week}])
         
             prediction = model.predict(input_data)
