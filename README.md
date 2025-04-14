@@ -68,6 +68,7 @@ Follow these steps to set up **Dublin Bikes**:
    ```bash
    pip install -r requirements.txt
    ```
+---
 
 ### ⚙️ Configuration
 
@@ -105,6 +106,8 @@ To run **Dublin Bikes**, follow these steps:
 
 #### For more advanced usage, check out the - [Documentation](https://Simon-mt1.github.io/COMP30830-Bicycle-Project/) .
 
+---
+
 ## 🧪 Testing
 
 Run tests using the following command:
@@ -112,6 +115,8 @@ Run tests using the following command:
 ```bash
 pytest Testing -v
 ```
+
+---
 
 ## 🤝 Contributing
 
