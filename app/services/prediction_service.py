@@ -10,11 +10,12 @@ from app.services.weather_service import WeatherService
 import os
 from datetime import datetime
 import math
+import pickle
 
 try:
     # Load the pre-trained prediction model
-    with open(os.path.join("app", "models", "bike_availability_model_rf.joblib"), "rb") as file:
-        model = joblib.load(file)
+    with open(os.path.join("app", "models", "bike_availability_model_rf.pkl"), "rb") as file:
+        model = pickle.load(file)
 except FileNotFoundError:
     print("File not found")
     
